@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is GEO and AEO? A Guide for Singapore Property Agents | AcrevaLabs Blog</title>
+  <meta name="description" content="GEO and AEO explained in plain English for Singapore property agents. What generative engine optimisation and answer engine optimisation mean, and why they matter now." />
+  <link rel="canonical" href="https://acrevalabs.com/blog/what-is-geo-aeo-property-agents/" />
+  <meta property="og:title" content="What Is GEO and AEO? A Guide for Singapore Property Agents | AcrevaLabs Blog" />
+  <meta property="og:description" content="GEO and AEO explained in plain English for Singapore property agents. What they are, why they matter, and how to get started." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://acrevalabs.com/blog/what-is-geo-aeo-property-agents/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { inter: ['Inter', 'sans-serif'] },
+          colors: { accent: '#4f8ef7' }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    body { background-color: #0a0a0a; color: #e0e0e0; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    #navbar { transition: background-color 0.3s ease, border-color 0.3s ease; }
+    #navbar.scrolled { background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; }
+    .section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #555555; }
+    .btn-primary { background-color: #4f8ef7; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 600; font-size: 15px; transition: box-shadow 0.25s ease, transform 0.2s ease; display: inline-block; text-decoration: none; }
+    .btn-primary:hover { box-shadow: 0 0 24px rgba(79,142,247,0.4); transform: translateY(-1px); }
+    .btn-ghost { border: 1px solid #333333; color: #ffffff; border-radius: 9999px; padding: 11px 24px; font-weight: 500; font-size: 14px; transition: border-color 0.2s ease; display: inline-block; text-decoration: none; }
+    .btn-ghost:hover { border-color: #555555; }
+    .divider { border: none; border-top: 1px solid #1a1a1a; }
+    #mobile-menu { display: none; background-color: #0a0a0a; border-top: 1px solid #1a1a1a; }
+    #mobile-menu.open { display: block; }
+    .prose h2 { font-size: 1.4rem; font-weight: 700; color: #ffffff; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+    .prose h3 { font-size: 1.1rem; font-weight: 600; color: #e0e0e0; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+    .prose p { color: #888888; line-height: 1.8; margin-bottom: 1.25rem; }
+    .prose ul { color: #888888; line-height: 1.8; margin-bottom: 1.25rem; padding-left: 1.25rem; }
+    .prose ul li { margin-bottom: 0.4rem; list-style-type: disc; }
+    .prose strong { color: #cccccc; font-weight: 600; }
+    .prose a { color: #4f8ef7; text-decoration: none; }
+    .prose a:hover { text-decoration: underline; }
+    .callout { background: #0f1929; border: 1px solid #1a2d4a; border-radius: 10px; padding: 16px 20px; margin: 1.75rem 0; }
+    .callout p { color: #7dd3fc; margin-bottom: 0; }
+    .ai-query { background: #0d1117; border: 1px solid #1e2a3a; border-radius: 10px; padding: 12px 16px; font-size: 13px; color: #7dd3fc; margin-bottom: 8px; }
+    .tag { font-size: 11px; padding: 3px 10px; border-radius: 9999px; font-weight: 500; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Is GEO and AEO? A Plain-English Guide for Singapore Property Agents",
+    "description": "GEO and AEO explained without jargon. What they are, why they matter for Singapore property agents, and how to build AI search visibility.",
+    "author": { "@type": "Organization", "name": "AcrevaLabs" },
+    "publisher": { "@type": "Organization", "name": "AcrevaLabs", "url": "https://acrevalabs.com" },
+    "datePublished": "2025-04-05",
+    "url": "https://acrevalabs.com/blog/what-is-geo-aeo-property-agents/"
+  }
+  </script>
+</head>
+<body class="min-h-screen">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4" style="background-color: transparent;">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="/" class="text-white font-semibold text-lg tracking-tight">AcrevaLabs</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors">Services</a>
+        <a href="/locations/" class="text-sm text-[#888888] hover:text-white transition-colors">Locations</a>
+        <a href="/blog/" class="text-sm text-white font-medium">Blog</a>
+        <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors">About</a>
+        <a href="/contact/" class="btn-primary" style="padding: 9px 20px; font-size: 13px;">Get a Free Audit</a>
+      </div>
+      <button id="hamburger" class="md:hidden text-[#888888] hover:text-white">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden mt-4 pb-4 px-6">
+      <div class="flex flex-col gap-4">
+        <a href="/services/" class="text-sm text-[#888888]">Services</a>
+        <a href="/locations/" class="text-sm text-[#888888]">Locations</a>
+        <a href="/blog/" class="text-sm text-white font-medium">Blog</a>
+        <a href="/about/" class="text-sm text-[#888888]">About</a>
+        <a href="/contact/" class="btn-primary text-center mt-2" style="padding: 9px 20px; font-size: 13px;">Get a Free Audit</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <section class="pt-32 pb-12 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="flex items-center gap-2 mb-8 text-xs text-[#555555]">
+        <a href="/" class="hover:text-[#888888] transition-colors">Home</a>
+        <span>/</span>
+        <a href="/blog/" class="hover:text-[#888888] transition-colors">Blog</a>
+        <span>/</span>
+        <span class="text-[#888888]">What Is GEO and AEO?</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-3 mb-6">
+        <span class="tag" style="background: #0f1929; color: #4f8ef7;">AI Search</span>
+        <span class="tag" style="background: #141414; color: #888888;">GEO & AEO</span>
+        <span class="text-xs text-[#555555]">6 min read</span>
+        <span class="text-xs text-[#444444]">·</span>
+        <span class="text-xs text-[#555555]">April 2025</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">What Is GEO and AEO? A Plain-English Guide for Singapore Property Agents</h1>
+      <p class="text-lg text-[#888888] leading-relaxed">Two new terms are reshaping how people find property agents online. Here's what they mean, why they're already affecting your business, and what to do about it.</p>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Article Body -->
+  <article class="py-12 px-6">
+    <div class="max-w-3xl mx-auto prose fade-up">
+
+      <p>A few years ago, if a buyer wanted to find a property agent in Singapore, they had two options: ask someone they knew, or search on Google. Both are still true today — but a third option has emerged that's growing fast: ask an AI assistant.</p>
+
+      <p>"ChatGPT, who is the best property agent in Woodlands Singapore?" or "Perplexity, which agent specialises in GCB properties in Bukit Timah?" These are real queries happening right now. And the answers don't come from property portals or paid ads. They come from AI systems that have scanned the web and formed a view about who the experts are.</p>
+
+      <p>GEO and AEO are the disciplines that determine whether your name shows up in those answers — or someone else's does.</p>
+
+      <h2>GEO: Generative Engine Optimisation</h2>
+
+      <p><strong>GEO</strong> stands for Generative Engine Optimisation. It refers to the practice of optimising your online presence so that AI tools — primarily ChatGPT, Perplexity, Google Gemini, and similar systems — cite you by name when answering relevant queries.</p>
+
+      <p>Here's how it works in practice. When a user asks ChatGPT a question like "who is a reliable property agent in Tampines?", the model doesn't have a fixed database of agents to draw from. It browses the web (or draws on its training data) and synthesises an answer based on the signals it finds. Those signals include:</p>
+
+      <ul>
+        <li>Content you've published that demonstrates expertise in that area</li>
+        <li>Mentions of your name on third-party sites (media, directories, reviews)</li>
+        <li>Structured data and schema markup on your website</li>
+        <li>The volume and quality of what's written about you online</li>
+      </ul>
+
+      <p>Agents who have built a strong content presence — dedicated location pages, expert articles, media mentions — are far more likely to be cited than agents with only a PropertyGuru profile and a Facebook page.</p>
+
+      <div class="callout">
+        <p><strong>The key insight:</strong> Traditional SEO gets you ranked in Google's blue links. GEO gets you named as a recommended agent in AI-generated answers. These are different outcomes that require overlapping but distinct strategies.</p>
+      </div>
+
+      <h2>AEO: Answer Engine Optimisation</h2>
+
+      <p><strong>AEO</strong> stands for Answer Engine Optimisation. This is specifically about Google Search — and specifically about the AI Overview boxes that now appear at the very top of Google results, above all organic listings, for many queries.</p>
+
+      <p>If you search Google Singapore right now for "how to choose a property agent Singapore" or "what does a property agent do during HDB resale", you'll likely see an AI-generated answer box before any links. That box is Google's AI Overview, powered by Gemini, and it draws from websites that have formatted their content to be AI-extractable.</p>
+
+      <p>AEO is about winning that box. The technical requirements include:</p>
+
+      <ul>
+        <li>FAQ schema markup on your pages (structured questions and answers)</li>
+        <li>Clear, concise answers to specific questions at the top of content sections</li>
+        <li>Content that directly answers "how", "what", "why", and "which" queries</li>
+        <li>High domain trust and topical authority in your subject area</li>
+      </ul>
+
+      <p>An agent who answers "what questions should I ask before choosing a property agent?" clearly and in structured format has a strong chance of appearing in the AI Overview box for that query — which shows before any organic result.</p>
+
+      <h2>How Are They Different From Regular SEO?</h2>
+
+      <p>Traditional SEO is about ranking your website's pages in Google's blue link results. You optimise for specific keywords, build authority through backlinks, and aim for page 1 positions. This still matters — a lot. Google's blue links still drive enormous traffic.</p>
+
+      <p>But GEO and AEO target different positions in the search experience:</p>
+
+      <ul>
+        <li><strong>Traditional SEO:</strong> Google blue links (positions 1–10 on page 1)</li>
+        <li><strong>AEO:</strong> Google AI Overviews (above position 1, before all organic results)</li>
+        <li><strong>GEO:</strong> ChatGPT / Perplexity answers (entirely separate from Google)</li>
+      </ul>
+
+      <p>The good news is that these disciplines share significant overlap. High-quality expert content, structured data, and a strong authority footprint benefit all three. But GEO in particular requires one thing that traditional SEO doesn't: a citation-building strategy that gets your name mentioned across the wider web — not just on your own site.</p>
+
+      <h2>Why Property Agents in Singapore Should Care Now</h2>
+
+      <p>There's a simple reason to care now rather than later: almost no Singapore property agents are doing this yet. The field is wide open.</p>
+
+      <p>Go ahead and ask ChatGPT "who is a good HDB agent in Tampines?" today. You won't get a named individual agent. You'll get general advice about what to look for, possibly a mention of PropertyGuru. The same is true for most other location-specific agent queries.</p>
+
+      <p>That's an opportunity. The first agent to build genuine GEO presence in any given area will own the AI citation share in that area — and because AI models are slow to update their training data and citation patterns, early movers hold their position for a long time.</p>
+
+      <div class="callout">
+        <p><strong>The window is right now.</strong> In 12–18 months, the agents who started building GEO presence in early 2025 will be firmly established in AI answers. The agents who waited will be starting from behind — competing against entrenched citations.</p>
+      </div>
+
+      <h2>Example AI Queries You Should Be Ranking For</h2>
+
+      <p>Here are the kinds of queries where a well-optimised Singapore property agent should appear:</p>
+
+      <div class="my-6 space-y-2">
+        <div class="ai-query">"Who is the best property agent in Tampines Singapore?"</div>
+        <div class="ai-query">"Recommend a trusted HDB specialist in Woodlands"</div>
+        <div class="ai-query">"Which agent specialises in selling semi-detached houses in Bukit Timah?"</div>
+        <div class="ai-query">"Good property agent for buying a condo in Orchard Singapore"</div>
+        <div class="ai-query">"Property agent near Jurong Lake District who knows the area well"</div>
+      </div>
+
+      <p>None of these queries are currently producing named individual agents in AI answers. That's the gap. And it's precisely the gap that GEO and AEO strategies are designed to fill.</p>
+
+      <h2>Where to Start</h2>
+
+      <p>If you're a Singapore property agent who wants to build GEO and AEO presence, here's the starting point:</p>
+
+      <ul>
+        <li><strong>Build a standalone website</strong> with dedicated location and property-type pages — the foundation that GEO citation-building requires</li>
+        <li><strong>Publish expert content</strong> that answers the questions buyers and sellers are researching in your specialisation area</li>
+        <li><strong>Add FAQ schema</strong> to your pages — this directly enables AEO / Google AI Overview appearance</li>
+        <li><strong>Get featured in property media</strong> — EdgeProp, PropertyGuru editorial, Business Times — so AI models find your name on authoritative third-party sources</li>
+        <li><strong>Build LinkedIn authority</strong> — AI models heavily weight LinkedIn profiles and posts when forming views about professional expertise</li>
+      </ul>
+
+      <p>This takes time to build. But the architecture is straightforward, and the first-mover advantage for agents who start now is substantial.</p>
+
+      <p>If you'd like a detailed assessment of your current GEO and AEO readiness, we offer a free audit that covers your current citation presence, content gaps, and the specific steps needed to start appearing in AI answers for your area and specialisation.</p>
+
+    </div>
+  </article>
+
+  <hr class="divider" />
+
+  <!-- CTA -->
+  <section class="py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="p-8 rounded-xl border border-[#1a2d4a] bg-[#0f1929] fade-up">
+        <h2 class="text-xl font-bold text-white mb-3">Find Out If You're Visible in AI Answers</h2>
+        <p class="text-sm text-[#888888] mb-6 leading-relaxed">We'll check your current GEO and AEO presence — which AI tools cite you (if any), what your content gaps are, and what it would take to start appearing in ChatGPT and Google AI Overviews for your area.</p>
+        <a href="/contact/" class="btn-primary">Get a Free Audit</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Related Posts -->
+  <section class="py-16 px-6" style="background-color: #111111;">
+    <div class="max-w-3xl mx-auto">
+      <div class="section-label mb-6">Related Articles</div>
+      <div class="grid md:grid-cols-2 gap-4">
+        <a href="/blog/chatgpt-perplexity-changing-property-search-singapore/" class="block p-5 rounded-xl border border-[#1a1a1a] bg-[#141414] hover:border-[#333333] transition-colors">
+          <p class="text-xs text-[#555555] mb-2">AI Search · 7 min read</p>
+          <p class="text-sm text-white font-medium leading-snug">How ChatGPT and Perplexity Are Changing Property Search in Singapore</p>
+        </a>
+        <a href="/blog/how-property-agents-rank-on-google-singapore/" class="block p-5 rounded-xl border border-[#1a1a1a] bg-[#141414] hover:border-[#333333] transition-colors">
+          <p class="text-xs text-[#555555] mb-2">SEO Fundamentals · 9 min read</p>
+          <p class="text-sm text-white font-medium leading-snug">How Property Agents Rank on Google in Singapore: The Complete Guide</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#1a1a1a] py-16 px-6" style="background-color: #111111;">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="text-white font-semibold text-lg mb-3">AcrevaLabs</div>
+          <p class="text-sm text-[#555555] leading-relaxed">Property SEO and AI search optimisation for independent agents in Singapore.</p>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Services</div>
+          <ul class="space-y-2.5">
+            <li><a href="/services/property-agent-seo/" class="text-sm text-[#666666] hover:text-white transition-colors">Property Agent SEO</a></li>
+            <li><a href="/services/geo-aeo/" class="text-sm text-[#666666] hover:text-white transition-colors">GEO & AEO</a></li>
+            <li><a href="/services/local-seo/" class="text-sm text-[#666666] hover:text-white transition-colors">Local SEO</a></li>
+            <li><a href="/services/content-strategy/" class="text-sm text-[#666666] hover:text-white transition-colors">Content Strategy</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Locations</div>
+          <ul class="space-y-2.5">
+            <li><a href="/locations/tampines/" class="text-sm text-[#666666] hover:text-white transition-colors">Tampines</a></li>
+            <li><a href="/locations/jurong/" class="text-sm text-[#666666] hover:text-white transition-colors">Jurong</a></li>
+            <li><a href="/locations/woodlands/" class="text-sm text-[#666666] hover:text-white transition-colors">Woodlands</a></li>
+            <li><a href="/locations/orchard/" class="text-sm text-[#666666] hover:text-white transition-colors">Orchard</a></li>
+            <li><a href="/locations/bukit-timah/" class="text-sm text-[#666666] hover:text-white transition-colors">Bukit Timah</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Company</div>
+          <ul class="space-y-2.5">
+            <li><a href="/about/" class="text-sm text-[#666666] hover:text-white transition-colors">About</a></li>
+            <li><a href="/blog/" class="text-sm text-white font-medium">Blog</a></li>
+            <li><a href="/contact/" class="text-sm text-[#666666] hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="divider mb-8" />
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-[#444444]">© 2025 AcrevaLabs. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="/privacy/" class="text-xs text-[#444444] hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms/" class="text-xs text-[#444444] hover:text-white transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); });
+    document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('open'); });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

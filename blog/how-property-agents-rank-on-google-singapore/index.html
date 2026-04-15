@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Property Agents Rank on Google in Singapore | AcrevaLabs Blog</title>
+  <meta name="description" content="The complete guide to SEO for independent property agents in Singapore. Learn keyword research, on-page optimisation, Google Business Profile, and content strategy." />
+  <link rel="canonical" href="https://acrevalabs.com/blog/how-property-agents-rank-on-google-singapore/" />
+  <meta property="og:title" content="How Property Agents Rank on Google in Singapore | AcrevaLabs Blog" />
+  <meta property="og:description" content="The complete guide to SEO for independent property agents in Singapore. Keyword research, GBP, and content strategy explained." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://acrevalabs.com/blog/how-property-agents-rank-on-google-singapore/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { inter: ['Inter', 'sans-serif'] },
+          colors: { accent: '#4f8ef7' }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    body { background-color: #0a0a0a; color: #e0e0e0; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    #navbar { transition: background-color 0.3s ease, border-color 0.3s ease; }
+    #navbar.scrolled { background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; }
+    .section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #555555; }
+    .btn-primary { background-color: #4f8ef7; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 600; font-size: 15px; transition: box-shadow 0.25s ease, transform 0.2s ease; display: inline-block; text-decoration: none; }
+    .btn-primary:hover { box-shadow: 0 0 24px rgba(79,142,247,0.4); transform: translateY(-1px); }
+    .btn-ghost { border: 1px solid #333333; color: #ffffff; border-radius: 9999px; padding: 11px 24px; font-weight: 500; font-size: 14px; transition: border-color 0.2s ease; display: inline-block; text-decoration: none; }
+    .btn-ghost:hover { border-color: #555555; }
+    .divider { border: none; border-top: 1px solid #1a1a1a; }
+    #mobile-menu { display: none; background-color: #0a0a0a; border-top: 1px solid #1a1a1a; }
+    #mobile-menu.open { display: block; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-question { cursor: pointer; }
+    .faq-icon { transition: transform 0.3s ease; }
+    .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+    .prose h2 { font-size: 1.4rem; font-weight: 700; color: #ffffff; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+    .prose h3 { font-size: 1.1rem; font-weight: 600; color: #e0e0e0; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+    .prose p { color: #888888; line-height: 1.8; margin-bottom: 1.25rem; }
+    .prose ul { color: #888888; line-height: 1.8; margin-bottom: 1.25rem; padding-left: 1.25rem; }
+    .prose ul li { margin-bottom: 0.4rem; list-style-type: disc; }
+    .prose strong { color: #cccccc; font-weight: 600; }
+    .prose a { color: #4f8ef7; text-decoration: none; }
+    .prose a:hover { text-decoration: underline; }
+    .callout { background: #0f1929; border: 1px solid #1a2d4a; border-radius: 10px; padding: 16px 20px; margin: 1.75rem 0; }
+    .callout p { color: #7dd3fc; margin-bottom: 0; }
+    .tag { font-size: 11px; padding: 3px 10px; border-radius: 9999px; font-weight: 500; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How Property Agents Rank on Google in Singapore: The Complete Guide",
+    "description": "The complete guide to SEO for independent property agents in Singapore. Keyword research, on-page optimisation, GBP, and content strategy.",
+    "author": { "@type": "Organization", "name": "AcrevaLabs" },
+    "publisher": { "@type": "Organization", "name": "AcrevaLabs", "url": "https://acrevalabs.com" },
+    "datePublished": "2025-04-01",
+    "url": "https://acrevalabs.com/blog/how-property-agents-rank-on-google-singapore/"
+  }
+  </script>
+</head>
+<body class="min-h-screen">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4" style="background-color: transparent;">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="/" class="text-white font-semibold text-lg tracking-tight">AcrevaLabs</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors">Services</a>
+        <a href="/locations/" class="text-sm text-[#888888] hover:text-white transition-colors">Locations</a>
+        <a href="/blog/" class="text-sm text-white font-medium">Blog</a>
+        <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors">About</a>
+        <a href="/contact/" class="btn-primary" style="padding: 9px 20px; font-size: 13px;">Get a Free Audit</a>
+      </div>
+      <button id="hamburger" class="md:hidden text-[#888888] hover:text-white">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden mt-4 pb-4 px-6">
+      <div class="flex flex-col gap-4">
+        <a href="/services/" class="text-sm text-[#888888]">Services</a>
+        <a href="/locations/" class="text-sm text-[#888888]">Locations</a>
+        <a href="/blog/" class="text-sm text-white font-medium">Blog</a>
+        <a href="/about/" class="text-sm text-[#888888]">About</a>
+        <a href="/contact/" class="btn-primary text-center mt-2" style="padding: 9px 20px; font-size: 13px;">Get a Free Audit</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <section class="pt-32 pb-12 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="flex items-center gap-2 mb-8 text-xs text-[#555555]">
+        <a href="/" class="hover:text-[#888888] transition-colors">Home</a>
+        <span>/</span>
+        <a href="/blog/" class="hover:text-[#888888] transition-colors">Blog</a>
+        <span>/</span>
+        <span class="text-[#888888]">How Property Agents Rank on Google</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-3 mb-6">
+        <span class="tag" style="background: #0a1a0a; color: #5cb85c;">SEO Fundamentals</span>
+        <span class="text-xs text-[#555555]">9 min read</span>
+        <span class="text-xs text-[#444444]">·</span>
+        <span class="text-xs text-[#555555]">April 2025</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">How Property Agents Rank on Google in Singapore: The Complete Guide</h1>
+      <p class="text-lg text-[#888888] leading-relaxed">Everything an independent agent needs to know about building a search presence that generates inbound enquiries — from keyword research to Google Business Profile to content strategy.</p>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Article Body -->
+  <article class="py-12 px-6">
+    <div class="max-w-3xl mx-auto prose fade-up">
+
+      <p>Most property agents in Singapore know they should be doing SEO. Very few understand what that actually means in the context of their business — or why the generic advice they find online doesn't apply to the property market here.</p>
+
+      <p>This guide is written specifically for independent agents in Singapore. We'll cover the exact strategies that get agents ranking on Google, explain what makes property SEO different from other industries, and give you a framework you can apply to your own situation — whether you specialise in HDB resale in Tampines or landed property in Bukit Timah.</p>
+
+      <h2>Why SEO Matters for Singapore Property Agents</h2>
+
+      <p>The Singapore property market has a specific characteristic that makes SEO unusually valuable for agents: buyers and sellers do extensive online research before they ever contact an agent.</p>
+
+      <p>A family buying their first condo will spend weeks searching for "buy condo near MRT Singapore", "property agent review Singapore", and "[their area] condo price" before picking up the phone. A couple upgrading from HDB will search "how to sell HDB and buy private", "best agent to sell 4-room Tampines", and "sell HDB before buying condo Singapore" — all before they talk to anyone.</p>
+
+      <p>The agent who appears at the top of those searches gets the call. The agent who doesn't, doesn't. It's that simple.</p>
+
+      <div class="callout">
+        <p><strong>The referral problem:</strong> Most agents rely primarily on referrals. Referral business is valuable but fragile — it depends on who you happened to help in the past and whether they remember to recommend you. SEO builds a channel that generates leads even when your referral network is quiet.</p>
+      </div>
+
+      <h2>The Three Pillars of Property Agent SEO</h2>
+
+      <p>Property SEO in Singapore comes down to three things working together: keyword strategy, your website, and your Google Business Profile. Let's break down each one.</p>
+
+      <h3>1. Keyword Strategy — Knowing What Your Buyers Are Searching</h3>
+
+      <p>The most common mistake agents make is targeting keywords that are too broad. "Singapore property agent" is searched by people all over the world looking for all sorts of things. You don't need to rank for that. You need to rank for the searches your actual buyers are doing.</p>
+
+      <p>Good property agent keyword research starts with location specificity. If you work in Tampines, the keyword "property agent Tampines" is infinitely more valuable than "Singapore property agent" — because the person searching it is in your service area with a real need.</p>
+
+      <p>From there, you layer in property type and transaction type:</p>
+
+      <ul>
+        <li>"sell 4-room HDB Tampines" — seller intent, specific flat type</li>
+        <li>"buy HDB near Tampines MRT" — buyer intent, MRT proximity</li>
+        <li>"HDB agent Tampines" — agent discovery, area-specific</li>
+        <li>"property valuation Tampines" — pre-transaction research</li>
+      </ul>
+
+      <p>Each of these searches represents a different buyer or seller at a different stage of their journey. A good keyword strategy captures all of them — and your content strategy then matches the right content to the right search.</p>
+
+      <h3>2. Your Website — The Foundation Everything Else Builds On</h3>
+
+      <p>Many agents either have no website at all, or have a generic page on their agency's domain. Neither of those will rank for competitive property searches.</p>
+
+      <p>A standalone website — your own domain, your own content — is the only reliable way to build SEO authority over time. Here's what an effective property agent website structure looks like:</p>
+
+      <ul>
+        <li><strong>Homepage:</strong> Who you are, where you specialise, what you do, clear CTA</li>
+        <li><strong>Location pages:</strong> Dedicated pages for each area you cover — Tampines, Woodlands, Jurong etc.</li>
+        <li><strong>Property type pages:</strong> HDB resale, new launch condo, landed, executive condo — whichever you work in</li>
+        <li><strong>Blog/Resource content:</strong> Answers to the questions buyers and sellers are researching</li>
+        <li><strong>About page:</strong> Your background, track record, credentials — trust signals that convert traffic</li>
+      </ul>
+
+      <p>Each page should target a specific keyword cluster. Your Tampines location page targets "property agent Tampines" and related terms. Your HDB specialist page targets "HDB agent Singapore" and its variations. Specificity wins over generality every time.</p>
+
+      <h3>3. Google Business Profile — The Local Ranking Engine</h3>
+
+      <p>When someone searches "property agent near me" or "property agent Woodlands", Google shows a map pack — three local listings — before the organic results. These come from Google Business Profiles, and they drive a significant volume of high-intent local searches.</p>
+
+      <p>Most Singapore property agents have a GBP listing but very few are properly optimised. A well-optimised profile means:</p>
+
+      <ul>
+        <li>Accurate business name, address, and service area</li>
+        <li>Correct primary category (Real Estate Agent) and secondary categories</li>
+        <li>Keyword-rich business description</li>
+        <li>High-quality photos (headshot, at viewings, sold properties)</li>
+        <li>Active review strategy — 20+ genuine reviews with detailed responses</li>
+        <li>Regular Google Posts with market updates and listings</li>
+        <li>Complete Q&A section with pre-answered common questions</li>
+      </ul>
+
+      <p>A GBP with 30+ reviews and active posting will outperform a GBP with 5 reviews and no activity — even if the second agent has a better website.</p>
+
+      <h2>Content Strategy: Answering the Questions That Buyers Are Already Asking</h2>
+
+      <p>Beyond your core location and property-type pages, content marketing is what separates agents who get consistent traffic from those who plateau. The goal is simple: create content that answers the exact questions your ideal clients are researching.</p>
+
+      <p>For an HDB specialist, this might include:</p>
+      <ul>
+        <li>"HDB resale process in Singapore: step by step guide"</li>
+        <li>"When is the right time to sell my HDB flat?"</li>
+        <li>"How to calculate COV for HDB resale"</li>
+        <li>"Sell HDB then rent or buy first? What most sellers get wrong"</li>
+      </ul>
+
+      <p>Each of these is a real search. Each one brings in a reader who is pre-qualified — they're in the middle of exactly the process you help with. If your content answers their question well, you become the agent they call when they're ready.</p>
+
+      <div class="callout">
+        <p><strong>The compounding advantage:</strong> SEO builds over time. A blog post you write this month may rank for years. An agent who starts now and publishes consistently will be generating significant organic traffic within 12 months — while their competitors are still waiting for referrals.</p>
+      </div>
+
+      <h2>The Competitive Reality: Why There's Still an Opportunity</h2>
+
+      <p>Singapore has over 30,000 registered property agents. Almost all of them are bad at SEO. The most common reason is that agencies and portals like PropertyGuru and 99.co have convinced agents that all digital marketing happens through those platforms.</p>
+
+      <p>Those platforms are useful for listings. They're terrible for building personal brand and agent authority. You're a tenant on someone else's platform — and you pay for every lead they deliver.</p>
+
+      <p>Your own website is real estate you own. The content, the authority, the rankings — none of it disappears when you change agencies or when a portal changes its pricing.</p>
+
+      <h2>Where to Start</h2>
+
+      <p>If you're starting from scratch, here's the sequence that works:</p>
+
+      <ul>
+        <li><strong>Week 1–2:</strong> Set up or claim and optimise your Google Business Profile</li>
+        <li><strong>Week 3–4:</strong> Build a simple website with a homepage, one location page, and a contact page</li>
+        <li><strong>Month 2:</strong> Add your property type page (HDB / condo / landed) and start your review acquisition strategy</li>
+        <li><strong>Month 3+:</strong> Publish two blog posts per month targeting buyer and seller research queries in your area</li>
+        <li><strong>Month 6+:</strong> Expand to additional location pages and property type content</li>
+      </ul>
+
+      <p>This isn't a fast strategy. Nothing in SEO is. But agents who follow this path consistently are building an asset — not renting a lead. In 12 months, the compounding returns become substantial.</p>
+
+      <p>If you'd like a free audit of your current search presence — or no presence at all — we'll show you exactly where you stand and what it would take to change it.</p>
+
+    </div>
+  </article>
+
+  <hr class="divider" />
+
+  <!-- CTA -->
+  <section class="py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="p-8 rounded-xl border border-[#1a2d4a] bg-[#0f1929] fade-up">
+        <h2 class="text-xl font-bold text-white mb-3">Get a Free SEO Audit for Your Property Business</h2>
+        <p class="text-sm text-[#888888] mb-6 leading-relaxed">We'll analyse your current search visibility, identify the keywords you're missing in your area, and give you a clear picture of what it takes to rank. No obligation.</p>
+        <a href="/contact/" class="btn-primary">Get a Free Audit</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Related Posts -->
+  <section class="py-16 px-6" style="background-color: #111111;">
+    <div class="max-w-3xl mx-auto">
+      <div class="section-label mb-6">Related Articles</div>
+      <div class="grid md:grid-cols-2 gap-4">
+        <a href="/blog/google-business-profile-property-agent-singapore/" class="block p-5 rounded-xl border border-[#1a1a1a] bg-[#141414] hover:border-[#333333] transition-colors">
+          <p class="text-xs text-[#555555] mb-2">Local SEO · 8 min read</p>
+          <p class="text-sm text-white font-medium leading-snug">Google Business Profile for Property Agents: The Singapore Optimisation Guide</p>
+        </a>
+        <a href="/blog/hdb-vs-condo-seo-different-strategy/" class="block p-5 rounded-xl border border-[#1a1a1a] bg-[#141414] hover:border-[#333333] transition-colors">
+          <p class="text-xs text-[#555555] mb-2">SEO Strategy · 7 min read</p>
+          <p class="text-sm text-white font-medium leading-snug">HDB vs Condo SEO: Why Your Strategy Needs to Be Different for Each</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#1a1a1a] py-16 px-6" style="background-color: #111111;">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="text-white font-semibold text-lg mb-3">AcrevaLabs</div>
+          <p class="text-sm text-[#555555] leading-relaxed">Property SEO and AI search optimisation for independent agents in Singapore.</p>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Services</div>
+          <ul class="space-y-2.5">
+            <li><a href="/services/property-agent-seo/" class="text-sm text-[#666666] hover:text-white transition-colors">Property Agent SEO</a></li>
+            <li><a href="/services/geo-aeo/" class="text-sm text-[#666666] hover:text-white transition-colors">GEO & AEO</a></li>
+            <li><a href="/services/local-seo/" class="text-sm text-[#666666] hover:text-white transition-colors">Local SEO</a></li>
+            <li><a href="/services/content-strategy/" class="text-sm text-[#666666] hover:text-white transition-colors">Content Strategy</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Locations</div>
+          <ul class="space-y-2.5">
+            <li><a href="/locations/tampines/" class="text-sm text-[#666666] hover:text-white transition-colors">Tampines</a></li>
+            <li><a href="/locations/jurong/" class="text-sm text-[#666666] hover:text-white transition-colors">Jurong</a></li>
+            <li><a href="/locations/woodlands/" class="text-sm text-[#666666] hover:text-white transition-colors">Woodlands</a></li>
+            <li><a href="/locations/orchard/" class="text-sm text-[#666666] hover:text-white transition-colors">Orchard</a></li>
+            <li><a href="/locations/bukit-timah/" class="text-sm text-[#666666] hover:text-white transition-colors">Bukit Timah</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Company</div>
+          <ul class="space-y-2.5">
+            <li><a href="/about/" class="text-sm text-[#666666] hover:text-white transition-colors">About</a></li>
+            <li><a href="/blog/" class="text-sm text-white font-medium">Blog</a></li>
+            <li><a href="/contact/" class="text-sm text-[#666666] hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="divider mb-8" />
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-[#444444]">© 2025 AcrevaLabs. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="/privacy/" class="text-xs text-[#444444] hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms/" class="text-xs text-[#444444] hover:text-white transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); });
+    document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('open'); });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

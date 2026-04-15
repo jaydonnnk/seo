@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Property SEO Insights for Singapore Agents | AcrevaLabs</title>
+  <meta name="description" content="Practical SEO and AI search guides for independent property agents in Singapore. Learn how to rank on Google, get cited by ChatGPT, and generate inbound leads." />
+  <link rel="canonical" href="https://acrevalabs.com/blog/" />
+  <meta property="og:title" content="Blog — Property SEO Insights for Singapore Agents | AcrevaLabs" />
+  <meta property="og:description" content="Practical SEO and AI search guides for independent property agents in Singapore." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://acrevalabs.com/blog/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { inter: ['Inter', 'sans-serif'] },
+          colors: { accent: '#4f8ef7' }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    body { background-color: #0a0a0a; color: #e0e0e0; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    #navbar { transition: background-color 0.3s ease, border-color 0.3s ease; }
+    #navbar.scrolled { background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; }
+    .section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #555555; }
+    .card-hover { transition: transform 0.25s ease, border-color 0.25s ease; }
+    .card-hover:hover { transform: translateY(-4px); border-color: #333333 !important; }
+    .btn-primary { background-color: #4f8ef7; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 600; font-size: 15px; transition: box-shadow 0.25s ease, transform 0.2s ease; display: inline-block; text-decoration: none; }
+    .btn-primary:hover { box-shadow: 0 0 24px rgba(79,142,247,0.4); transform: translateY(-1px); }
+    .btn-ghost { border: 1px solid #333333; color: #ffffff; border-radius: 9999px; padding: 11px 24px; font-weight: 500; font-size: 14px; transition: border-color 0.2s ease; display: inline-block; text-decoration: none; }
+    .btn-ghost:hover { border-color: #555555; }
+    .divider { border: none; border-top: 1px solid #1a1a1a; }
+    #mobile-menu { display: none; background-color: #0a0a0a; border-top: 1px solid #1a1a1a; }
+    #mobile-menu.open { display: block; }
+    .post-card:hover .post-title { color: #4f8ef7; }
+    .post-card { transition: transform 0.25s ease, border-color 0.25s ease; }
+    .post-card:hover { transform: translateY(-4px); border-color: #333333 !important; }
+    .post-title { transition: color 0.2s ease; }
+    .tag { font-size: 11px; padding: 3px 10px; border-radius: 9999px; font-weight: 500; }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4" style="background-color: transparent;">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="/" class="text-white font-semibold text-lg tracking-tight">AcrevaLabs</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors">Services</a>
+        <a href="/locations/" class="text-sm text-[#888888] hover:text-white transition-colors">Locations</a>
+        <a href="/blog/" class="text-sm text-white font-medium">Blog</a>
+        <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors">About</a>
+        <a href="/contact/" class="btn-primary" style="padding: 9px 20px; font-size: 13px;">Get a Free Audit</a>
+      </div>
+      <button id="hamburger" class="md:hidden text-[#888888] hover:text-white">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden mt-4 pb-4 px-6">
+      <div class="flex flex-col gap-4">
+        <a href="/services/" class="text-sm text-[#888888]">Services</a>
+        <a href="/locations/" class="text-sm text-[#888888]">Locations</a>
+        <a href="/blog/" class="text-sm text-white font-medium">Blog</a>
+        <a href="/about/" class="text-sm text-[#888888]">About</a>
+        <a href="/contact/" class="btn-primary text-center mt-2" style="padding: 9px 20px; font-size: 13px;">Get a Free Audit</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <div class="section-label mb-4">AcrevaLabs Blog</div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
+          SEO & AI Search Insights for Singapore Property Agents
+        </h1>
+        <p class="text-lg text-[#888888] leading-relaxed">
+          Practical guides on ranking on Google, getting cited by ChatGPT, and building an inbound pipeline — written specifically for independent agents in Singapore.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Featured Post -->
+  <section class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="section-label mb-6">Featured</div>
+      <a href="/blog/chatgpt-perplexity-changing-property-search-singapore/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] p-8 md:p-10 fade-up">
+        <div class="flex flex-wrap items-center gap-3 mb-5">
+          <span class="tag" style="background: #0f1929; color: #4f8ef7;">AI Search</span>
+          <span class="tag" style="background: #141414; color: #888888;">GEO & AEO</span>
+          <span class="text-xs text-[#555555]">7 min read</span>
+          <span class="text-xs text-[#444444]">·</span>
+          <span class="text-xs text-[#555555]">April 2025</span>
+        </div>
+        <h2 class="post-title text-2xl md:text-3xl font-bold text-white mb-4 leading-snug">How ChatGPT and Perplexity Are Changing Property Search in Singapore — And What Agents Should Do Now</h2>
+        <p class="text-[#888888] leading-relaxed max-w-3xl mb-6">AI assistants are now answering property questions that buyers used to type into Google. When someone asks ChatGPT "who is the best property agent in Tampines?" — is your name in the answer? Probably not. Here's why that matters and what to do about it.</p>
+        <div class="flex items-center gap-2 text-sm text-[#4f8ef7] font-medium">
+          Read article
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- All Posts -->
+  <section class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="section-label mb-8">All Articles</div>
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <a href="/blog/how-property-agents-rank-on-google-singapore/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] p-6 fade-up">
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+            <span class="tag" style="background: #0a1a0a; color: #5cb85c;">SEO Fundamentals</span>
+            <span class="text-xs text-[#555555]">9 min read</span>
+          </div>
+          <h2 class="post-title text-lg font-bold text-white mb-3 leading-snug">How Property Agents Rank on Google in Singapore: The Complete Guide</h2>
+          <p class="text-sm text-[#888888] leading-relaxed mb-4">Everything an independent agent needs to know to build a Google presence that generates inbound enquiries — from keyword research to Google Business Profile to content strategy.</p>
+          <div class="flex items-center gap-2 text-xs text-[#4f8ef7] font-medium">
+            Read article
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <a href="/blog/what-is-geo-aeo-property-agents/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] p-6 fade-up" style="transition-delay:0.1s">
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+            <span class="tag" style="background: #0f1929; color: #4f8ef7;">AI Search</span>
+            <span class="text-xs text-[#555555]">6 min read</span>
+          </div>
+          <h2 class="post-title text-lg font-bold text-white mb-3 leading-snug">What Is GEO and AEO? A Plain-English Guide for Singapore Property Agents</h2>
+          <p class="text-sm text-[#888888] leading-relaxed mb-4">Generative Engine Optimisation and Answer Engine Optimisation explained without jargon. What they are, why they matter, and how they're different from the SEO you already know.</p>
+          <div class="flex items-center gap-2 text-xs text-[#4f8ef7] font-medium">
+            Read article
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <a href="/blog/google-business-profile-property-agent-singapore/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] p-6 fade-up" style="transition-delay:0.15s">
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+            <span class="tag" style="background: #1a1a0a; color: #c8a020;">Local SEO</span>
+            <span class="text-xs text-[#555555]">8 min read</span>
+          </div>
+          <h2 class="post-title text-lg font-bold text-white mb-3 leading-snug">Google Business Profile for Property Agents: The Singapore Optimisation Guide</h2>
+          <p class="text-sm text-[#888888] leading-relaxed mb-4">Most Singapore property agents have a GBP listing. Almost none of them are properly optimised. Here's the complete playbook for dominating the local map pack in your area.</p>
+          <div class="flex items-center gap-2 text-xs text-[#4f8ef7] font-medium">
+            Read article
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <a href="/blog/hdb-vs-condo-seo-different-strategy/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] p-6 fade-up" style="transition-delay:0.2s">
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+            <span class="tag" style="background: #0a1a0a; color: #5cb85c;">SEO Strategy</span>
+            <span class="text-xs text-[#555555]">7 min read</span>
+          </div>
+          <h2 class="post-title text-lg font-bold text-white mb-3 leading-snug">HDB vs Condo SEO: Why Your Strategy Needs to Be Different for Each</h2>
+          <p class="text-sm text-[#888888] leading-relaxed mb-4">HDB buyers and condo buyers search completely differently. Using the same SEO approach for both means you're optimised for neither. Here's how to build a strategy that matches your market.</p>
+          <div class="flex items-center gap-2 text-xs text-[#4f8ef7] font-medium">
+            Read article
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CTA -->
+  <section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center fade-up">
+      <div class="section-label mb-4">Work With Us</div>
+      <h2 class="text-3xl font-bold text-white mb-4">Ready to Turn Search Into Inbound Leads?</h2>
+      <p class="text-[#888888] mb-8">Free audit. We'll show you exactly where you're missing searches in your area and what it takes to capture them.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/contact/" class="btn-primary">Get a Free Audit</a>
+        <a href="/services/" class="btn-ghost">View Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#1a1a1a] py-16 px-6" style="background-color: #111111;">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="text-white font-semibold text-lg mb-3">AcrevaLabs</div>
+          <p class="text-sm text-[#555555] leading-relaxed">Property SEO and AI search optimisation for independent agents in Singapore.</p>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Services</div>
+          <ul class="space-y-2.5">
+            <li><a href="/services/property-agent-seo/" class="text-sm text-[#666666] hover:text-white transition-colors">Property Agent SEO</a></li>
+            <li><a href="/services/geo-aeo/" class="text-sm text-[#666666] hover:text-white transition-colors">GEO & AEO</a></li>
+            <li><a href="/services/local-seo/" class="text-sm text-[#666666] hover:text-white transition-colors">Local SEO</a></li>
+            <li><a href="/services/content-strategy/" class="text-sm text-[#666666] hover:text-white transition-colors">Content Strategy</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Locations</div>
+          <ul class="space-y-2.5">
+            <li><a href="/locations/tampines/" class="text-sm text-[#666666] hover:text-white transition-colors">Tampines</a></li>
+            <li><a href="/locations/jurong/" class="text-sm text-[#666666] hover:text-white transition-colors">Jurong</a></li>
+            <li><a href="/locations/woodlands/" class="text-sm text-[#666666] hover:text-white transition-colors">Woodlands</a></li>
+            <li><a href="/locations/orchard/" class="text-sm text-[#666666] hover:text-white transition-colors">Orchard</a></li>
+            <li><a href="/locations/bukit-timah/" class="text-sm text-[#666666] hover:text-white transition-colors">Bukit Timah</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Company</div>
+          <ul class="space-y-2.5">
+            <li><a href="/about/" class="text-sm text-[#666666] hover:text-white transition-colors">About</a></li>
+            <li><a href="/blog/" class="text-sm text-white font-medium">Blog</a></li>
+            <li><a href="/contact/" class="text-sm text-[#666666] hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="divider mb-8" />
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-[#444444]">© 2025 AcrevaLabs. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="/privacy/" class="text-xs text-[#444444] hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms/" class="text-xs text-[#444444] hover:text-white transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); });
+    document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('open'); });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
