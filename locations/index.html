@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property SEO Across Singapore | AcrevaLabs</title>
+  <meta name="description" content="Location-specific property SEO for agents across Singapore. Tampines, Jurong, Woodlands, Orchard, Bukit Timah. Rank where your buyers search." />
+  <link rel="canonical" href="https://acrevalabs.com/locations/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Property SEO Across Singapore | AcrevaLabs" />
+  <meta property="og:description" content="Location-specific property SEO for agents across Singapore. Rank for the area searches your buyers actually use." />
+  <meta property="og:url" content="https://acrevalabs.com/locations/" />
+  <meta property="og:site_name" content="AcrevaLabs" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ffffff; -webkit-font-smoothing: antialiased; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    #navbar { transition: background-color 0.3s ease, border-color 0.3s ease; }
+    #navbar.scrolled { background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; }
+    .section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #555555; }
+    .card-hover { transition: transform 0.25s ease, border-color 0.25s ease; }
+    .card-hover:hover { transform: translateY(-4px); border-color: #333333 !important; }
+    .btn-primary { background-color: #4f8ef7; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 600; font-size: 15px; transition: box-shadow 0.25s ease, transform 0.2s ease; display: inline-block; text-decoration: none; }
+    .btn-primary:hover { box-shadow: 0 0 24px rgba(79,142,247,0.4); transform: translateY(-1px); }
+    .btn-ghost { border: 1px solid #333333; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 500; font-size: 15px; transition: border-color 0.25s ease; display: inline-block; text-decoration: none; background: transparent; }
+    .btn-ghost:hover { border-color: #555555; }
+    .divider { border: none; border-top: 1px solid #1a1a1a; }
+    #mobile-menu { display: none; background-color: #0a0a0a; border-top: 1px solid #1a1a1a; }
+    #mobile-menu.open { display: block; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-question { cursor: pointer; }
+    .faq-icon { transition: transform 0.3s ease; }
+    .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+    .star { color: #f5a623; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="/" class="text-white font-bold text-xl tracking-tight">AcrevaLabs</a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Services</a>
+      <a href="/locations/" class="text-sm text-white transition-colors duration-200">Locations</a>
+      <a href="/blog/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Blog</a>
+      <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">About</a>
+      <a href="/contact/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Contact</a>
+    </div>
+    <div class="hidden md:block">
+      <a href="/free-audit/" class="btn-ghost" style="padding: 9px 22px; font-size: 14px;">Get Free Audit</a>
+    </div>
+    <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+      <span class="block w-5 h-0.5 bg-white"></span><span class="block w-5 h-0.5 bg-white"></span><span class="block w-5 h-0.5 bg-white"></span>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden px-6 pb-4 pt-2">
+    <div class="flex flex-col gap-4">
+      <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors">Services</a>
+      <a href="/locations/" class="text-sm text-white">Locations</a>
+      <a href="/blog/" class="text-sm text-[#888888] hover:text-white transition-colors">Blog</a>
+      <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors">About</a>
+      <a href="/contact/" class="text-sm text-[#888888] hover:text-white transition-colors">Contact</a>
+      <a href="/free-audit/" class="btn-primary text-center" style="padding: 10px 22px; font-size: 14px;">Get Free Audit</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="pt-36 pb-20 px-6" style="background-color: #0a0a0a;">
+  <div class="max-w-4xl mx-auto">
+    <div class="fade-up">
+      <div class="flex items-center gap-3 mb-8">
+        <div style="width: 3px; height: 18px; background-color: #4f8ef7; border-radius: 2px;"></div>
+        <span class="section-label">Locations</span>
+      </div>
+      <h1 style="font-size: clamp(36px, 5vw, 62px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; color: #ffffff; margin-bottom: 20px;">
+        Property SEO Services Across Singapore
+      </h1>
+      <p style="font-size: 18px; line-height: 1.7; color: #888888; max-width: 600px; margin-bottom: 32px;">
+        "Property agent Singapore" is dominated by portals. "Property agent Tampines" is where you can win. Location-specific SEO is how independent agents outrank agencies with ten times the budget.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="/free-audit/" class="btn-primary">Get a Free Audit &rarr;</a>
+        <a href="#locations" class="btn-ghost">View All Locations</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- WHY LOCAL SEO -->
+<section class="py-20 px-6" style="background-color: #111111;">
+  <div class="max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
+      <div class="fade-up">
+        <span class="section-label">Why location matters</span>
+        <h2 style="font-size: clamp(22px, 2.5vw, 34px); font-weight: 700; line-height: 1.2; color: #ffffff; margin-top: 16px; margin-bottom: 20px;">
+          Buyers search by area. You need to rank in their area.
+        </h2>
+        <p style="font-size: 16px; line-height: 1.8; color: #888888; margin-bottom: 16px;">
+          No buyer types "property agent Singapore" and expects a useful result. They type "property agent Tampines", "sell 4-room flat Woodlands", "HDB agent Jurong West". Every search is location-specific.
+        </p>
+        <p style="font-size: 16px; line-height: 1.8; color: #888888; margin-bottom: 16px;">
+          Generic SEO targets broad terms nobody uses or terms portals dominate. Location SEO targets the exact searches your buyers make when they're ready to contact someone — and positions you as the clear local authority.
+        </p>
+        <p style="font-size: 16px; line-height: 1.8; color: #888888;">
+          A Tampines agent with deep Tampines SEO will outrank PropNex and ERA on Tampines-specific searches. That's the asymmetry local SEO creates.
+        </p>
+      </div>
+      <div class="fade-up" style="transition-delay: 0.1s;">
+        <div class="space-y-4">
+          <div class="card-hover p-5 rounded-xl" style="background: #141414; border: 1px solid #222222;">
+            <div style="font-size: 13px; color: #4f8ef7; font-weight: 600; margin-bottom: 6px;">Specific beats broad</div>
+            <p style="font-size: 14px; color: #888888; line-height: 1.6;">"Property agent Tampines HDB" has less competition and higher buying intent than "property agent Singapore". Local keywords convert at a higher rate.</p>
+          </div>
+          <div class="card-hover p-5 rounded-xl" style="background: #141414; border: 1px solid #222222;">
+            <div style="font-size: 13px; color: #4f8ef7; font-weight: 600; margin-bottom: 6px;">Google rewards local expertise</div>
+            <p style="font-size: 14px; color: #888888; line-height: 1.6;">A page dedicated to selling HDB flats in Tampines, with local content depth, outranks a generic page from a national agency. Google's local algorithm favours specificity.</p>
+          </div>
+          <div class="card-hover p-5 rounded-xl" style="background: #141414; border: 1px solid #222222;">
+            <div style="font-size: 13px; color: #4f8ef7; font-weight: 600; margin-bottom: 6px;">AI searches are local too</div>
+            <p style="font-size: 14px; color: #888888; line-height: 1.6;">When buyers ask ChatGPT "who is the best property agent in Tampines?", the answer pulls from local authority signals — not generic brand size.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- REVIEWS -->
+<section class="py-20 px-6" style="background-color: #0a0a0a;">
+  <div class="max-w-4xl mx-auto">
+    <div class="fade-up mb-10">
+      <div class="flex gap-1 mb-3"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div>
+      <span class="section-label">Client Reviews</span>
+    </div>
+    <!-- REVIEW: replace with real client reviews -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.0s;">
+        <div class="flex gap-1 mb-4"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div>
+        <p style="font-size: 14px; color: #888888; line-height: 1.7; margin-bottom: 16px;">"Buyers in Tampines now find me before they find any portal listing. Local SEO is the reason. I rank for exactly what my clients search."</p>
+        <div style="font-size: 13px; color: #555;"><!-- REVIEW: replace with real client name --><span style="color: #fff; font-weight: 600;">Agent Name</span> &bull; Tampines HDB Specialist</div>
+      </div>
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.07s;">
+        <div class="flex gap-1 mb-4"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div>
+        <p style="font-size: 14px; color: #888888; line-height: 1.7; margin-bottom: 16px;">"I specialise in Jurong West HDB. There's a specific buyer looking for exactly my expertise. Local SEO connects us directly."</p>
+        <div style="font-size: 13px; color: #555;"><!-- REVIEW: replace with real client name --><span style="color: #fff; font-weight: 600;">Agent Name</span> &bull; Jurong West</div>
+      </div>
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.14s;">
+        <div class="flex gap-1 mb-4"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></div>
+        <p style="font-size: 14px; color: #888888; line-height: 1.7; margin-bottom: 16px;">"Orchard condo buyers are a specific audience. Generic SEO doesn't reach them. Location targeting does."</p>
+        <div style="font-size: 13px; color: #555;"><!-- REVIEW: replace with real client name --><span style="color: #fff; font-weight: 600;">Agent Name</span> &bull; Orchard Condo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- LOCATION CARDS -->
+<section id="locations" class="py-24 px-6" style="background-color: #111111;">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-14 fade-up">
+      <span class="section-label">Areas We Cover</span>
+      <h2 style="font-size: clamp(28px, 3.5vw, 46px); font-weight: 700; line-height: 1.15; color: #ffffff; margin-top: 16px;">Five key areas. Deep local strategy for each.</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <a href="/locations/tampines/" class="card-hover fade-up block p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.0s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">East Singapore</div>
+        <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Tampines</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Singapore's largest HDB town. High agent density means local SEO isn't optional — it's the only way to stand out. Family buyers, ECs, and mature resale market.</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">View Tampines SEO &rarr;</span>
+      </a>
+
+      <a href="/locations/jurong/" class="card-hover fade-up block p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.05s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">West Singapore</div>
+        <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Jurong</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Jurong Lake District transformation is driving buyer interest. Agents who rank now will dominate as the area grows. Mixed HDB and condo market.</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">View Jurong SEO &rarr;</span>
+      </a>
+
+      <a href="/locations/woodlands/" class="card-hover fade-up block p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.1s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">North Singapore</div>
+        <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Woodlands</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Large town, underserved digitally. RTS Link development is generating new buyer interest. Low local SEO competition means earlier wins for agents who move now.</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">View Woodlands SEO &rarr;</span>
+      </a>
+
+      <a href="/locations/orchard/" class="card-hover fade-up block p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.15s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Central Singapore</div>
+        <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Orchard</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">High-end condo corridor. Luxury buyers use Google and AI search to validate agents before contact. The right search presence here directly affects your referral quality.</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">View Orchard SEO &rarr;</span>
+      </a>
+
+      <a href="/locations/bukit-timah/" class="card-hover fade-up block p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.2s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Central-West Singapore</div>
+        <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Bukit Timah</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">GCB belt and luxury landed market. The highest commission bracket in Singapore. Buyers here expect credibility — and search to verify it before calling.</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">View Bukit Timah SEO &rarr;</span>
+      </a>
+
+      <div class="fade-up p-8 rounded-xl" style="background: #0f1929; border: 1px solid #1a2d4a; transition-delay: 0.25s; display: flex; flex-direction: column; justify-content: center;">
+        <p style="font-size: 14px; color: #888888; line-height: 1.7; margin-bottom: 20px;">Your area isn't listed? We work across all Singapore districts. Start with a free audit and we'll map your local search opportunity.</p>
+        <a href="/free-audit/" class="btn-primary" style="font-size: 14px; padding: 10px 22px; display: inline-block; width: fit-content;">Get Free Audit &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- PROCESS -->
+<section class="py-24 px-6" style="background-color: #0a0a0a;">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-14 fade-up">
+      <span class="section-label">The Process</span>
+      <h2 style="font-size: clamp(28px, 3.5vw, 46px); font-weight: 700; color: #ffffff; margin-top: 16px;">How we build local authority.</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.0s;">
+        <div style="font-size: 48px; font-weight: 800; color: #1a1a1a; line-height: 1; margin-bottom: 16px;">01</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Local Audit</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">We map your visibility for location-specific searches in your area — who's ranking, for what, and where the gaps are.</p>
+      </div>
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.07s;">
+        <div style="font-size: 48px; font-weight: 800; color: #1a1a1a; line-height: 1; margin-bottom: 16px;">02</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Area Strategy</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">We build a keyword and content map specific to your town, estate type, and buyer profile — not generic property terms.</p>
+      </div>
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.14s;">
+        <div style="font-size: 48px; font-weight: 800; color: #1a1a1a; line-height: 1; margin-bottom: 16px;">03</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Execute</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">Location pages, local schema, GBP optimisation, area-specific content, and AI visibility signals — all built for your specific market.</p>
+      </div>
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.21s;">
+        <div style="font-size: 48px; font-weight: 800; color: #1a1a1a; line-height: 1; margin-bottom: 16px;">04</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Compound</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">Rankings build monthly. New developments and market shifts are reflected in new content — keeping you the local authority over time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- FAQS -->
+<section class="py-24 px-6" style="background-color: #111111;">
+  <div class="max-w-3xl mx-auto">
+    <div class="mb-12 fade-up">
+      <span class="section-label">FAQs</span>
+      <h2 style="font-size: clamp(24px, 3vw, 36px); font-weight: 700; color: #ffffff; margin-top: 16px;">Local SEO questions answered.</h2>
+    </div>
+    <div class="space-y-3 fade-up">
+      <div style="background: #141414; border: 1px solid #222222; border-radius: 12px; overflow: hidden;">
+        <button class="faq-question w-full text-left p-6 flex items-center justify-between" aria-expanded="false">
+          <span style="font-size: 15px; font-weight: 600; color: #ffffff;">Why does location matter for property agent SEO?</span>
+          <span class="faq-icon" style="color: #555; font-size: 20px; min-width: 20px; text-align: center;">+</span>
+        </button>
+        <div class="faq-answer">
+          <div style="padding: 0 24px 24px; font-size: 15px; color: #888888; line-height: 1.7;">Property buyers in Singapore search by location — always. "Property agent Singapore" is too broad to be useful and is dominated by large portals. "Property agent Tampines" or "sell HDB Woodlands" are the searches that indicate buying intent and are winnable by an individual agent. Local SEO targets these specific, high-intent searches and positions you as the clear authority in your area.</div>
+        </div>
+      </div>
+      <div style="background: #141414; border: 1px solid #222222; border-radius: 12px; overflow: hidden;">
+        <button class="faq-question w-full text-left p-6 flex items-center justify-between" aria-expanded="false">
+          <span style="font-size: 15px; font-weight: 600; color: #ffffff;">Can I rank in multiple areas of Singapore?</span>
+          <span class="faq-icon" style="color: #555; font-size: 20px; min-width: 20px; text-align: center;">+</span>
+        </button>
+        <div class="faq-answer">
+          <div style="padding: 0 24px 24px; font-size: 15px; color: #888888; line-height: 1.7;">Yes, but focus produces better results than breadth. We recommend building deep authority in one or two areas before expanding. An agent ranked #1 for Tampines HDB searches will generate far more leads than an agent ranked #8 across five towns. Once you own an area, we expand to adjacent areas with the same systematic approach.</div>
+        </div>
+      </div>
+      <div style="background: #141414; border: 1px solid #222222; border-radius: 12px; overflow: hidden;">
+        <button class="faq-question w-full text-left p-6 flex items-center justify-between" aria-expanded="false">
+          <span style="font-size: 15px; font-weight: 600; color: #ffffff;">What's the difference between local SEO and regular SEO?</span>
+          <span class="faq-icon" style="color: #555; font-size: 20px; min-width: 20px; text-align: center;">+</span>
+        </button>
+        <div class="faq-answer">
+          <div style="padding: 0 24px 24px; font-size: 15px; color: #888888; line-height: 1.7;">Regular SEO focuses on ranking for broad topic-based searches. Local SEO focuses on ranking for searches that include a specific location — and appearing in Google's local pack (the map results). For property agents, local SEO also involves Google Business Profile optimisation, local schema markup, area-specific content pages, and local citation building. Both are part of what we do — local SEO is the layer that drives the most qualified traffic.</div>
+        </div>
+      </div>
+      <div style="background: #141414; border: 1px solid #222222; border-radius: 12px; overflow: hidden;">
+        <button class="faq-question w-full text-left p-6 flex items-center justify-between" aria-expanded="false">
+          <span style="font-size: 15px; font-weight: 600; color: #ffffff;">How long does local SEO take?</span>
+          <span class="faq-icon" style="color: #555; font-size: 20px; min-width: 20px; text-align: center;">+</span>
+        </button>
+        <div class="faq-answer">
+          <div style="padding: 0 24px 24px; font-size: 15px; color: #888888; line-height: 1.7;">Local SEO often moves faster than broad SEO because the competition is lower. For specific area + property type searches (e.g., "property agent Tampines HDB"), first page rankings can appear within 45–60 days in less competitive niches. Google Maps / local pack results often improve faster — within 30 days of GBP optimisation. Full compounding effect builds from month 4–6.</div>
+        </div>
+      </div>
+      <div style="background: #141414; border: 1px solid #222222; border-radius: 12px; overflow: hidden;">
+        <button class="faq-question w-full text-left p-6 flex items-center justify-between" aria-expanded="false">
+          <span style="font-size: 15px; font-weight: 600; color: #ffffff;">Do I need a physical office to rank locally?</span>
+          <span class="faq-icon" style="color: #555; font-size: 20px; min-width: 20px; text-align: center;">+</span>
+        </button>
+        <div class="faq-answer">
+          <div style="padding: 0 24px 24px; font-size: 15px; color: #888888; line-height: 1.7;">No. Most independent agents don't have a dedicated office, and Google's local algorithm accounts for this. You can still rank for location-specific searches through service area business (SAB) GBP setup, location-specific page content, and local citation building. A physical office helps with the map pack, but is not required to rank in organic local search results.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- CTA -->
+<section class="py-28 px-6 text-center" style="background-color: #0a0a0a;">
+  <div class="max-w-xl mx-auto fade-up">
+    <span class="section-label">Get Started</span>
+    <h2 style="font-size: clamp(26px, 3.5vw, 42px); font-weight: 700; line-height: 1.2; color: #ffffff; margin-top: 16px; margin-bottom: 16px;">Own your area before your competitors do.</h2>
+    <p style="font-size: 16px; line-height: 1.7; color: #888888; margin-bottom: 32px;">Free audit. We'll show you exactly where you stand in your area right now.</p>
+    <a href="/free-audit/" class="btn-primary" style="font-size: 16px; padding: 14px 36px;">Get Your Free Audit</a>
+    <p style="font-size: 13px; color: #444; margin-top: 16px;">Results within 48 hours.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background-color: #0a0a0a; border-top: 1px solid #1a1a1a; padding: 48px 24px 32px;">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+      <div>
+        <a href="/" class="text-white font-bold text-lg tracking-tight">AcrevaLabs</a>
+        <p style="font-size: 13px; color: #555555; margin-top: 8px; line-height: 1.6;">Singapore's Property Search Authority</p>
+      </div>
+      <div class="flex flex-wrap gap-x-8 gap-y-3 md:justify-center">
+        <a href="/services/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Services</a>
+        <a href="/locations/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Locations</a>
+        <a href="/blog/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Blog</a>
+        <a href="/about/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">About</a>
+        <a href="/contact/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <div class="md:text-right">
+        <p style="font-size: 13px; color: #555555;">Singapore &bull; acrevalabs.com</p>
+      </div>
+    </div>
+    <div style="border-top: 1px solid #1a1a1a; padding-top: 24px;">
+      <p style="font-size: 12px; color: #333333; text-align: center;">&copy; 2026 AcrevaLabs. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); });
+  document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('open'); });
+  const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-answer').forEach(a => a.style.maxHeight = null);
+      document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+      if (!isOpen) { answer.style.maxHeight = answer.scrollHeight + 'px'; btn.setAttribute('aria-expanded', 'true'); }
+    });
+  });
+</script>
+</body>
+</html>

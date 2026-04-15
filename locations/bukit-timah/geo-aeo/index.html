@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Search Optimisation — Bukit Timah | AcrevaLabs</title>
+  <meta name="description" content="GEO and AEO for property agents in Bukit Timah. Get named by ChatGPT and Perplexity when UHNW buyers search for GCB specialists and landed property agents online." />
+  <link rel="canonical" href="https://acrevalabs.com/locations/bukit-timah/geo-aeo/" />
+  <meta property="og:title" content="AI Search Optimisation — Bukit Timah | AcrevaLabs" />
+  <meta property="og:description" content="GEO and AEO for property agents in Bukit Timah. Get named by ChatGPT when UHNW buyers and school-belt families search for landed specialists." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://acrevalabs.com/locations/bukit-timah/geo-aeo/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { inter: ['Inter', 'sans-serif'] },
+          colors: { accent: '#4f8ef7' }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    body { background-color: #0a0a0a; color: #e0e0e0; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    #navbar { transition: background-color 0.3s ease, border-color 0.3s ease; }
+    #navbar.scrolled { background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; }
+    .section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #555555; }
+    .card-hover { transition: transform 0.25s ease, border-color 0.25s ease; }
+    .card-hover:hover { transform: translateY(-4px); border-color: #333333 !important; }
+    .btn-primary { background-color: #4f8ef7; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 600; font-size: 15px; transition: box-shadow 0.25s ease, transform 0.2s ease; display: inline-block; text-decoration: none; }
+    .btn-primary:hover { box-shadow: 0 0 24px rgba(79,142,247,0.4); transform: translateY(-1px); }
+    .btn-ghost { border: 1px solid #333333; color: #ffffff; border-radius: 9999px; padding: 11px 24px; font-weight: 500; font-size: 14px; transition: border-color 0.2s ease; display: inline-block; text-decoration: none; }
+    .btn-ghost:hover { border-color: #555555; }
+    .divider { border: none; border-top: 1px solid #1a1a1a; }
+    #mobile-menu { display: none; background-color: #0a0a0a; border-top: 1px solid #1a1a1a; }
+    #mobile-menu.open { display: block; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-question { cursor: pointer; }
+    .faq-icon { transition: transform 0.3s ease; }
+    .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+    .star { color: #f5a623; }
+    .cta-bar { background: #0f1929; border: 1px solid #1a2d4a; border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .ai-query { background: #0d1117; border: 1px solid #1e2a3a; border-radius: 10px; padding: 14px 18px; font-size: 13px; color: #7dd3fc; margin-bottom: 8px; }
+    .ai-response { background: #0a1a0a; border: 1px solid #1a2d1a; border-radius: 10px; padding: 14px 18px; font-size: 13px; color: #86efac; margin-bottom: 8px; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Search Optimisation (GEO & AEO) — Bukit Timah",
+    "provider": {
+      "@type": "Organization",
+      "name": "AcrevaLabs",
+      "url": "https://acrevalabs.com"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Bukit Timah, Singapore"
+    },
+    "description": "Generative Engine Optimisation and Answer Engine Optimisation for property agents in Bukit Timah, targeting UHNW buyers and school-belt families using ChatGPT, Perplexity, and Google AI Overviews.",
+    "serviceType": "GEO and AEO — AI Search Optimisation"
+  }
+  </script>
+</head>
+<body class="min-h-screen">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4" style="background-color: transparent;">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="/" class="text-white font-semibold text-lg tracking-tight">AcrevaLabs</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors">Services</a>
+        <a href="/locations/" class="text-sm text-white font-medium">Locations</a>
+        <a href="/blog/" class="text-sm text-[#888888] hover:text-white transition-colors">Blog</a>
+        <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors">About</a>
+        <a href="/contact/" class="btn-primary" style="padding: 9px 20px; font-size: 13px;">Get a Free Audit</a>
+      </div>
+      <button id="hamburger" class="md:hidden text-[#888888] hover:text-white">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden mt-4 pb-4 px-6">
+      <div class="flex flex-col gap-4">
+        <a href="/services/" class="text-sm text-[#888888]">Services</a>
+        <a href="/locations/" class="text-sm text-white font-medium">Locations</a>
+        <a href="/blog/" class="text-sm text-[#888888]">Blog</a>
+        <a href="/about/" class="text-sm text-[#888888]">About</a>
+        <a href="/contact/" class="btn-primary text-center mt-2" style="padding: 9px 20px; font-size: 13px;">Get a Free Audit</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <!-- Breadcrumb -->
+      <div class="flex items-center gap-2 mb-8 text-xs text-[#555555]">
+        <a href="/" class="hover:text-[#888888] transition-colors">Home</a>
+        <span>/</span>
+        <a href="/locations/" class="hover:text-[#888888] transition-colors">Locations</a>
+        <span>/</span>
+        <a href="/locations/bukit-timah/" class="hover:text-[#888888] transition-colors">Bukit Timah</a>
+        <span>/</span>
+        <span class="text-[#888888]">AI Search Optimisation</span>
+      </div>
+
+      <!-- CTA Bar -->
+      <div class="cta-bar mb-12">
+        <div>
+          <p class="text-sm font-semibold text-white">GEO & AEO — Bukit Timah</p>
+          <p class="text-xs text-[#888888] mt-0.5">Get named by ChatGPT when UHNW buyers search for GCB and landed specialists</p>
+        </div>
+        <a href="/contact/" class="btn-primary" style="padding: 10px 22px; font-size: 13px; white-space: nowrap;">Get a Free Audit</a>
+      </div>
+
+      <div class="max-w-3xl">
+        <div class="section-label mb-4">GEO & AEO · Bukit Timah</div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+          AI Search Optimisation for Bukit Timah Property Agents
+        </h1>
+        <p class="text-lg text-[#888888] leading-relaxed mb-8">
+          UHNW buyers, family offices, and school-belt families are the heaviest AI tool users in Singapore's property market. When they ask ChatGPT "who is the best GCB agent in Singapore?" — your name needs to be in the answer. Today, no Bukit Timah landed agent is optimised for this. We change that.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/contact/" class="btn-primary">Get a Free Audit</a>
+          <a href="/locations/bukit-timah/" class="btn-ghost">Back to Bukit Timah Hub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- AI Queries -->
+  <section class="py-20 px-6" style="background-color: #111111;">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-up">
+        <div class="section-label mb-3">The New Search Reality</div>
+        <h2 class="text-3xl font-bold text-white mb-4">These Are the Exact Queries Your Buyers Are Using</h2>
+        <p class="text-[#888888] max-w-2xl mb-12">Bukit Timah buyers don't scroll through listings. They ask AI assistants. If your name isn't in the answer, the enquiry goes to someone else.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="fade-up">
+          <div class="section-label mb-3">UHNW & GCB Buyer Queries</div>
+          <div class="ai-query">"Who is the best GCB agent in Singapore?"</div>
+          <div class="ai-query">"Recommend a Good Class Bungalow specialist in Bukit Timah"</div>
+          <div class="ai-query">"Which property agent has the most GCB transactions in District 10?"</div>
+          <div class="ai-query">"Best landed property agent for UHNW buyers Singapore"</div>
+          <div class="ai-query">"Property agent who specialises in selling bungalows Singapore"</div>
+        </div>
+        <div class="fade-up" style="transition-delay:0.1s">
+          <div class="section-label mb-3">School-Belt & Family Buyer Queries</div>
+          <div class="ai-query">"Which property agent can help me find a landed house near Nanyang Primary?"</div>
+          <div class="ai-query">"Best agent for buying semi-detached in Bukit Timah school zone"</div>
+          <div class="ai-query">"Property agent who knows the Hwa Chong Institution school corridor"</div>
+          <div class="ai-query">"Recommend a landed specialist near Methodist Girls School belt"</div>
+          <div class="ai-query">"Which agent can find me a house within 1km of a top primary school?"</div>
+        </div>
+      </div>
+      <div class="mt-8 p-5 rounded-xl border border-[#1a2d1a] bg-[#0a1a0a] fade-up">
+        <p class="text-sm text-[#86efac] font-medium mb-2">Current reality:</p>
+        <p class="text-sm text-[#888888]">Ask any of these questions on ChatGPT or Perplexity today and no Bukit Timah landed agent is cited by name. The AI answers with generic advice or PropertyGuru listings. The first agent to build GEO presence in this segment wins every AI-referred enquiry — with zero competition.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- GEO vs AEO -->
+  <section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-up">
+        <div class="section-label mb-3">Two Disciplines</div>
+        <h2 class="text-3xl font-bold text-white mb-4">GEO and AEO Are Different — and You Need Both</h2>
+        <p class="text-[#888888] max-w-2xl mb-12">They optimise for different AI systems, but together they cover the full new search landscape.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="fade-up p-8 rounded-xl border border-[#1a1a1a] bg-[#111111]">
+          <div class="w-12 h-12 rounded-xl bg-[#0f1929] flex items-center justify-center mb-6">
+            <svg width="24" height="24" fill="none" stroke="#4f8ef7" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 1 0 20 14.5 14.5 0 0 1 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-3">GEO — Generative Engine Optimisation</h3>
+          <p class="text-sm text-[#888888] leading-relaxed mb-4">Optimises for ChatGPT, Perplexity, Claude, and other LLM-powered assistants. These systems browse the web in real time and cite agents who have the right content signals, authority markers, and structured data.</p>
+          <ul class="text-sm text-[#555555] space-y-2">
+            <li>→ Citation mentions in AI-generated answers</li>
+            <li>→ Named as a specialist — not just a link</li>
+            <li>→ Referenced across UHNW and GCB queries</li>
+            <li>→ Captures international and cross-border buyers</li>
+          </ul>
+        </div>
+        <div class="fade-up p-8 rounded-xl border border-[#1a1a1a] bg-[#111111]" style="transition-delay:0.1s">
+          <div class="w-12 h-12 rounded-xl bg-[#0f1929] flex items-center justify-center mb-6">
+            <svg width="24" height="24" fill="none" stroke="#4f8ef7" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-3">AEO — Answer Engine Optimisation</h3>
+          <p class="text-sm text-[#888888] leading-relaxed mb-4">Optimises for Google's AI Overviews — the AI-generated answer boxes that now appear above organic results on Google Search. AEO requires FAQ schema, structured content, and answer-ready formatting.</p>
+          <ul class="text-sm text-[#555555] space-y-2">
+            <li>→ Featured in Google AI Overview boxes</li>
+            <li>→ Appears before organic results</li>
+            <li>→ Captures "how", "what", "which" queries</li>
+            <li>→ Reaches school-belt families on Google</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Why UHNW Buyers Use AI -->
+  <section class="py-20 px-6" style="background-color: #111111;">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-up">
+        <div class="section-label mb-3">The Buyer Behaviour Shift</div>
+        <h2 class="text-3xl font-bold text-white mb-4">Why UHNW Buyers Are the Highest AI Tool Users</h2>
+        <p class="text-[#888888] max-w-2xl mb-12">The assumption that UHNW buyers rely purely on referrals is outdated. Here's what's actually happening in the Bukit Timah segment.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="fade-up p-6 rounded-xl border border-[#1a1a1a] bg-[#141414] card-hover">
+          <h3 class="text-white font-semibold mb-3 text-sm">Verification Before Referral</h3>
+          <p class="text-sm text-[#888888] leading-relaxed">Even when a GCB buyer receives a referral, they validate the agent online before making contact. A weak digital presence — or no AI citation — undermines the referral credibility before the first call.</p>
+        </div>
+        <div class="fade-up p-6 rounded-xl border border-[#1a1a1a] bg-[#141414] card-hover" style="transition-delay:0.1s">
+          <h3 class="text-white font-semibold mb-3 text-sm">International & Cross-Border Buyers</h3>
+          <p class="text-sm text-[#888888] leading-relaxed">HNW buyers from Hong Kong, Jakarta, and London searching for Singapore GCBs have no local referral network. They use ChatGPT or Perplexity to find agents. GEO is the only channel that reaches them.</p>
+        </div>
+        <div class="fade-up p-6 rounded-xl border border-[#1a1a1a] bg-[#141414] card-hover" style="transition-delay:0.2s">
+          <h3 class="text-white font-semibold mb-3 text-sm">Complexity Drives AI Research</h3>
+          <p class="text-sm text-[#888888] leading-relaxed">GCB and landed transactions are complex — GCB area rules, PR approval, SLA eligibility, AV calculations. Buyers research these topics on AI tools. Agents who answer these questions in their content get cited as the experts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- What We Build -->
+  <section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="fade-up">
+        <div class="section-label mb-3">What We Build</div>
+        <h2 class="text-3xl font-bold text-white mb-4">The GEO + AEO Infrastructure for Bukit Timah Specialists</h2>
+        <p class="text-[#888888] max-w-2xl mb-12">Five interconnected layers that build your AI citation presence from the ground up.</p>
+      </div>
+      <div class="space-y-4 fade-up">
+        <div class="p-6 rounded-xl border border-[#1a1a1a] bg-[#111111] flex items-start gap-6">
+          <div class="w-10 h-10 rounded-full bg-[#0f1929] flex items-center justify-center flex-shrink-0 text-sm font-bold text-[#4f8ef7]">1</div>
+          <div>
+            <h3 class="text-white font-semibold mb-2">Expert Content Library</h3>
+            <p class="text-sm text-[#888888] leading-relaxed">Deep-dive articles on GCB area regulations, landed eligibility for PRs, SLA approval process, semi-D valuation methodology, school corridor strategy. These are the content assets that AI systems cite because they contain specific, expert information found nowhere else.</p>
+          </div>
+        </div>
+        <div class="p-6 rounded-xl border border-[#1a1a1a] bg-[#111111] flex items-start gap-6">
+          <div class="w-10 h-10 rounded-full bg-[#0f1929] flex items-center justify-center flex-shrink-0 text-sm font-bold text-[#4f8ef7]">2</div>
+          <div>
+            <h3 class="text-white font-semibold mb-2">FAQ Schema & Structured Data</h3>
+            <p class="text-sm text-[#888888] leading-relaxed">We implement FAQ schema across all your GCB, semi-D, and school-belt content. This enables Google AI Overviews to extract and display your answers, placing you above organic results when buyers search for landed property guidance.</p>
+          </div>
+        </div>
+        <div class="p-6 rounded-xl border border-[#1a1a1a] bg-[#111111] flex items-start gap-6">
+          <div class="w-10 h-10 rounded-full bg-[#0f1929] flex items-center justify-center flex-shrink-0 text-sm font-bold text-[#4f8ef7]">3</div>
+          <div>
+            <h3 class="text-white font-semibold mb-2">Citation Network Development</h3>
+            <p class="text-sm text-[#888888] leading-relaxed">Named mentions in property media (EdgeProp, PropertyGuru editorial, Business Times Property), financial publications, and LinkedIn articles. Each citation trains AI models to associate your name with GCB and landed specialist expertise.</p>
+          </div>
+        </div>
+        <div class="p-6 rounded-xl border border-[#1a1a1a] bg-[#111111] flex items-start gap-6">
+          <div class="w-10 h-10 rounded-full bg-[#0f1929] flex items-center justify-center flex-shrink-0 text-sm font-bold text-[#4f8ef7]">4</div>
+          <div>
+            <h3 class="text-white font-semibold mb-2">Topical Cluster Architecture</h3>
+            <p class="text-sm text-[#888888] leading-relaxed">Hub-and-spoke content structure across all landed subtopics. GCB hub with sub-topics on each GCB area. Semi-D hub with school-belt, sub-area, and buyer-profile spokes. This topical depth signals genuine expertise to AI models.</p>
+          </div>
+        </div>
+        <div class="p-6 rounded-xl border border-[#1a1a1a] bg-[#111111] flex items-start gap-6">
+          <div class="w-10 h-10 rounded-full bg-[#0f1929] flex items-center justify-center flex-shrink-0 text-sm font-bold text-[#4f8ef7]">5</div>
+          <div>
+            <h3 class="text-white font-semibold mb-2">AI Citation Monitoring</h3>
+            <p class="text-sm text-[#888888] leading-relaxed">Monthly audits of ChatGPT, Perplexity, and Google AI Overview responses to the key GCB and landed queries. We track citation frequency, response positioning, and competitor mentions — and adjust the strategy accordingly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- First Mover -->
+  <section class="py-20 px-6" style="background-color: #111111;">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="fade-up">
+          <div class="section-label mb-3">First-Mover Advantage</div>
+          <h2 class="text-3xl font-bold text-white mb-6">Zero Bukit Timah Landed Agents Are AI-Optimised Today</h2>
+          <p class="text-[#888888] leading-relaxed mb-6">We checked. Ask ChatGPT or Perplexity to recommend a GCB specialist in Singapore. No individual agent is named. Ask for a semi-D expert in Bukit Timah. Same result.</p>
+          <p class="text-[#888888] leading-relaxed mb-6">This is an anomaly. The Bukit Timah landed segment is Singapore's highest-value property market — and it has no AI-visible specialists. The agent who moves first builds a citational advantage that compounds over months and becomes very difficult to displace.</p>
+          <p class="text-[#888888] leading-relaxed">SEO authority takes time. AI citation authority also takes time. The best time to start was 12 months ago. The second best time is now.</p>
+        </div>
+        <div class="fade-up" style="transition-delay:0.2s">
+          <div class="p-6 rounded-xl border border-[#1a1a1a] bg-[#141414]">
+            <div class="section-label mb-4">Current AI Citation Landscape</div>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-[#888888]">GCB specialist citations in ChatGPT</span>
+                <span class="text-xs px-2 py-1 rounded-full bg-[#1a0a0a] text-[#d9534f]">0 agents</span>
+              </div>
+              <div class="h-1.5 bg-[#1a1a1a] rounded-full"><div class="h-1.5 bg-[#d9534f] rounded-full" style="width: 0%"></div></div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-[#888888]">Semi-D specialist citations in Perplexity</span>
+                <span class="text-xs px-2 py-1 rounded-full bg-[#1a0a0a] text-[#d9534f]">0 agents</span>
+              </div>
+              <div class="h-1.5 bg-[#1a1a1a] rounded-full"><div class="h-1.5 bg-[#d9534f] rounded-full" style="width: 0%"></div></div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-[#888888]">School corridor experts in Google AI</span>
+                <span class="text-xs px-2 py-1 rounded-full bg-[#1a0a0a] text-[#d9534f]">0 agents</span>
+              </div>
+              <div class="h-1.5 bg-[#1a1a1a] rounded-full"><div class="h-1.5 bg-[#d9534f] rounded-full" style="width: 0%"></div></div>
+            </div>
+            <div class="mt-6 p-4 rounded-lg bg-[#0f1929] border border-[#1a2d4a]">
+              <p class="text-xs text-[#4f8ef7] font-medium">The first agent to build GEO presence in this segment will own every AI-referred enquiry with zero competition.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- Testimonial -->
+  <section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center fade-up">
+      <div class="flex justify-center gap-1 mb-6">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <blockquote class="text-lg text-white font-medium leading-relaxed mb-6">
+        <!-- REVIEW --> "The idea of being cited in ChatGPT when someone asks for a GCB specialist — that's extraordinary reach. No amount of traditional marketing gets me in front of a buyer in Hong Kong or London who's asking AI for Singapore agent recommendations."
+      </blockquote>
+      <div class="text-sm text-[#555555]"><!-- PLACEHOLDER --> Landed Property Specialist, District 10/21, Bukit Timah</div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- FAQ -->
+  <section class="py-20 px-6" style="background-color: #111111;">
+    <div class="max-w-3xl mx-auto">
+      <div class="fade-up">
+        <div class="section-label mb-3">FAQ</div>
+        <h2 class="text-3xl font-bold text-white mb-10">Common Questions</h2>
+      </div>
+      <div class="space-y-4 fade-up">
+        <div class="border border-[#1a1a1a] rounded-xl overflow-hidden">
+          <button class="faq-question w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+            <span class="text-white font-medium text-sm">Can I really be cited by ChatGPT by name?</span>
+            <span class="faq-icon text-[#555555] text-xl leading-none flex-shrink-0 ml-4">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="px-5 pb-5 text-sm text-[#888888] leading-relaxed">Yes. AI models like ChatGPT and Perplexity actively browse the web and cite specific people, businesses, and websites when responding to queries. Agents with strong content authority, structured data, and cross-web mentions are the ones who get cited. This is exactly what our GEO programme builds.</div>
+          </div>
+        </div>
+        <div class="border border-[#1a1a1a] rounded-xl overflow-hidden">
+          <button class="faq-question w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+            <span class="text-white font-medium text-sm">How long before I appear in AI answers?</span>
+            <span class="faq-icon text-[#555555] text-xl leading-none flex-shrink-0 ml-4">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="px-5 pb-5 text-sm text-[#888888] leading-relaxed">Typically 3–6 months for initial AI citation appearances, with significant presence building by month 9–12. Google AI Overviews respond faster (2–4 months) once FAQ schema is implemented. The zero-competition environment in Bukit Timah landed means we expect faster-than-average results.</div>
+          </div>
+        </div>
+        <div class="border border-[#1a1a1a] rounded-xl overflow-hidden">
+          <button class="faq-question w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+            <span class="text-white font-medium text-sm">Is GEO different from regular SEO?</span>
+            <span class="faq-icon text-[#555555] text-xl leading-none flex-shrink-0 ml-4">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="px-5 pb-5 text-sm text-[#888888] leading-relaxed">GEO and SEO share a foundation — both require quality content, authority signals, and structured data. But GEO goes further: it requires citation-building across external media, entity disambiguation (ensuring AI systems know who you are), and content formatted for AI extraction rather than just keyword ranking.</div>
+          </div>
+        </div>
+        <div class="border border-[#1a1a1a] rounded-xl overflow-hidden">
+          <button class="faq-question w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+            <span class="text-white font-medium text-sm">Do I need both GEO and AEO, or can I choose one?</span>
+            <span class="faq-icon text-[#555555] text-xl leading-none flex-shrink-0 ml-4">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="px-5 pb-5 text-sm text-[#888888] leading-relaxed">They're most powerful together because they target different systems (ChatGPT/Perplexity vs Google). But if budget is a constraint, we start with AEO — Google AI Overviews reach the broadest local audience and produce results fastest. GEO is then layered on as the programme matures.</div>
+          </div>
+        </div>
+        <div class="border border-[#1a1a1a] rounded-xl overflow-hidden">
+          <button class="faq-question w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+            <span class="text-white font-medium text-sm">Will GEO work for school-belt buyers, not just GCB?</span>
+            <span class="faq-icon text-[#555555] text-xl leading-none flex-shrink-0 ml-4">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="px-5 pb-5 text-sm text-[#888888] leading-relaxed">Absolutely. School-belt families are among the most AI-research-heavy buyers — the P1 registration process creates urgency and complexity that drives extensive AI query behaviour. We build specific content clusters for school-belt searches as part of the Bukit Timah GEO programme.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CTA -->
+  <section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center fade-up">
+      <div class="section-label mb-4">Get Started</div>
+      <h2 class="text-3xl font-bold text-white mb-4">Be the First Bukit Timah Agent Named by AI</h2>
+      <p class="text-[#888888] mb-8">Free audit. We'll check your current AI citation presence and show you exactly what it takes to appear in ChatGPT and Google AI Overviews for GCB and landed searches.</p>
+      <a href="/contact/" class="btn-primary">Get a Free Audit</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#1a1a1a] py-16 px-6" style="background-color: #111111;">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="text-white font-semibold text-lg mb-3">AcrevaLabs</div>
+          <p class="text-sm text-[#555555] leading-relaxed">Property SEO and AI search optimisation for independent agents in Singapore.</p>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Services</div>
+          <ul class="space-y-2.5">
+            <li><a href="/services/property-agent-seo/" class="text-sm text-[#666666] hover:text-white transition-colors">Property Agent SEO</a></li>
+            <li><a href="/services/geo-aeo/" class="text-sm text-[#666666] hover:text-white transition-colors">GEO & AEO</a></li>
+            <li><a href="/services/local-seo/" class="text-sm text-[#666666] hover:text-white transition-colors">Local SEO</a></li>
+            <li><a href="/services/content-strategy/" class="text-sm text-[#666666] hover:text-white transition-colors">Content Strategy</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Locations</div>
+          <ul class="space-y-2.5">
+            <li><a href="/locations/tampines/" class="text-sm text-[#666666] hover:text-white transition-colors">Tampines</a></li>
+            <li><a href="/locations/jurong/" class="text-sm text-[#666666] hover:text-white transition-colors">Jurong</a></li>
+            <li><a href="/locations/woodlands/" class="text-sm text-[#666666] hover:text-white transition-colors">Woodlands</a></li>
+            <li><a href="/locations/orchard/" class="text-sm text-[#666666] hover:text-white transition-colors">Orchard</a></li>
+            <li><a href="/locations/bukit-timah/" class="text-sm text-white font-medium">Bukit Timah</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xs text-[#444444] uppercase tracking-widest mb-4">Company</div>
+          <ul class="space-y-2.5">
+            <li><a href="/about/" class="text-sm text-[#666666] hover:text-white transition-colors">About</a></li>
+            <li><a href="/blog/" class="text-sm text-[#666666] hover:text-white transition-colors">Blog</a></li>
+            <li><a href="/contact/" class="text-sm text-[#666666] hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="divider mb-8" />
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-[#444444]">© 2025 AcrevaLabs. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="/privacy/" class="text-xs text-[#444444] hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms/" class="text-xs text-[#444444] hover:text-white transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); });
+    document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('open'); });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-answer').forEach(a => a.style.maxHeight = null);
+        document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        if (!isOpen) { answer.style.maxHeight = answer.scrollHeight + 'px'; btn.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+  </script>
+</body>
+</html>

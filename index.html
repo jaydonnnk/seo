@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property SEO Agency Singapore | AcrevaLabs</title>
+  <meta name="description" content="Specialised SEO and AI search optimisation for Singapore property agents. Rank on Google, ChatGPT, and Perplexity. Get a free audit today." />
+  <link rel="canonical" href="https://acrevalabs.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Property SEO Agency Singapore | AcrevaLabs" />
+  <meta property="og:description" content="Specialised SEO and AI search optimisation for Singapore property agents. Rank on Google, ChatGPT, and Perplexity." />
+  <meta property="og:url" content="https://acrevalabs.com/" />
+  <meta property="og:site_name" content="AcrevaLabs" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Schema: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AcrevaLabs",
+    "description": "Singapore's Property Search Authority — SEO and AI search optimisation for property agents.",
+    "url": "https://acrevalabs.com",
+    "email": "hello@acrevalabs.com",
+    "areaServed": "Singapore",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@acrevalabs.com",
+      "contactType": "customer service"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SG"
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Fade-up animation */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Nav transition */
+    #navbar {
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    #navbar.scrolled {
+      background-color: #0a0a0a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #555555;
+    }
+
+    /* Card hover */
+    .card-hover {
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      border-color: #333333 !important;
+    }
+
+    /* CTA button glow */
+    .btn-primary {
+      background-color: #4f8ef7;
+      color: #ffffff;
+      border-radius: 9999px;
+      padding: 12px 28px;
+      font-weight: 600;
+      font-size: 15px;
+      transition: box-shadow 0.25s ease, transform 0.2s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn-primary:hover {
+      box-shadow: 0 0 24px rgba(79, 142, 247, 0.4);
+      transform: translateY(-1px);
+    }
+    .btn-ghost {
+      border: 1px solid #333333;
+      color: #ffffff;
+      border-radius: 9999px;
+      padding: 12px 28px;
+      font-weight: 500;
+      font-size: 15px;
+      transition: border-color 0.25s ease, color 0.25s ease;
+      display: inline-block;
+      text-decoration: none;
+      background: transparent;
+    }
+    .btn-ghost:hover {
+      border-color: #555555;
+      color: #cccccc;
+    }
+
+    /* Process step line */
+    .step-line {
+      position: absolute;
+      top: 20px;
+      left: calc(50% + 20px);
+      right: calc(-50% + 20px);
+      height: 1px;
+      background: #1a1a1a;
+    }
+
+    /* Google SERP mockup */
+    .serp-mockup {
+      background: #141414;
+      border: 1px solid #222222;
+      border-radius: 12px;
+      padding: 20px;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+    .serp-search-bar {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 24px;
+      padding: 10px 18px;
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .serp-result {
+      padding: 12px 0;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .serp-result:last-child { border-bottom: none; }
+    .serp-url { font-size: 12px; color: #4b9b6e; margin-bottom: 4px; }
+    .serp-title { font-size: 16px; color: #4f8ef7; font-weight: 600; margin-bottom: 4px; cursor: pointer; }
+    .serp-desc { font-size: 13px; color: #888888; line-height: 1.5; }
+    .serp-rank-badge {
+      display: inline-block;
+      background: #4f8ef7;
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 6px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ChatGPT mockup */
+    .chat-mockup {
+      background: #141414;
+      border: 1px solid #222222;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 12px;
+    }
+    .chat-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .chat-icon {
+      width: 28px; height: 28px;
+      background: #10a37f;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; color: white; font-weight: 700;
+    }
+    .chat-name { font-size: 13px; color: #888; font-weight: 500; }
+    .chat-text { font-size: 13px; color: #cccccc; line-height: 1.6; }
+    .chat-cite { font-size: 11px; color: #4f8ef7; margin-top: 8px; }
+
+    /* Divider */
+    .divider { border: none; border-top: 1px solid #1a1a1a; }
+
+    /* Mobile menu */
+    #mobile-menu {
+      display: none;
+      background-color: #0a0a0a;
+      border-top: 1px solid #1a1a1a;
+    }
+    #mobile-menu.open { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="/" class="text-white font-bold text-xl tracking-tight" aria-label="AcrevaLabs Home">AcrevaLabs</a>
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Services</a>
+      <a href="/locations/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Locations</a>
+      <a href="/blog/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Blog</a>
+      <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">About</a>
+      <a href="/contact/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Contact</a>
+    </div>
+    <div class="hidden md:block">
+      <a href="/free-audit/" class="btn-ghost text-sm" style="padding: 9px 22px;">Get Free Audit</a>
+    </div>
+    <!-- Mobile Hamburger -->
+    <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+      <span class="block w-5 h-0.5 bg-white transition-all duration-200"></span>
+      <span class="block w-5 h-0.5 bg-white transition-all duration-200"></span>
+      <span class="block w-5 h-0.5 bg-white transition-all duration-200"></span>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden px-6 pb-4 pt-2">
+    <div class="flex flex-col gap-4">
+      <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors">Services</a>
+      <a href="/locations/" class="text-sm text-[#888888] hover:text-white transition-colors">Locations</a>
+      <a href="/blog/" class="text-sm text-[#888888] hover:text-white transition-colors">Blog</a>
+      <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors">About</a>
+      <a href="/contact/" class="text-sm text-[#888888] hover:text-white transition-colors">Contact</a>
+      <a href="/free-audit/" class="btn-primary text-center" style="padding: 10px 22px; font-size: 14px;">Get Free Audit</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<section class="min-h-screen flex items-center pt-20 pb-16 px-6" style="background-color: #0a0a0a;">
+  <div class="max-w-6xl mx-auto w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: Copy -->
+      <div class="fade-up">
+        <!-- Label -->
+        <div class="flex items-center gap-3 mb-8">
+          <div style="width: 3px; height: 18px; background-color: #4f8ef7; border-radius: 2px;"></div>
+          <span class="section-label">Property SEO + AI Search &bull; Singapore</span>
+        </div>
+
+        <!-- H1 -->
+        <h1 style="font-size: clamp(42px, 6vw, 72px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; color: #ffffff; margin-bottom: 24px;">
+          Singapore property agents who get found first win more deals.
+        </h1>
+
+        <!-- Subheadline -->
+        <p style="font-size: 18px; line-height: 1.7; color: #888888; margin-bottom: 40px; max-width: 520px;">
+          Most agents rely on 99.co and referrals. We build search systems that put your name in front of buyers on Google, ChatGPT, and Perplexity — before they find anyone else.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-wrap gap-4 mb-12">
+          <a href="/free-audit/" class="btn-primary">Get a Free Audit &rarr;</a>
+          <a href="/services/" class="btn-ghost">See How It Works</a>
+        </div>
+
+        <!-- Trust Stats -->
+        <div class="flex flex-wrap gap-0 divide-x" style="border-top: 1px solid #1a1a1a; padding-top: 24px;">
+          <div class="pr-8">
+            <div style="font-size: 20px; font-weight: 700; color: #ffffff;">30,000+</div>
+            <div style="font-size: 12px; color: #555555; margin-top: 2px;">SG Agents</div>
+          </div>
+          <div class="px-8">
+            <div style="font-size: 20px; font-weight: 700; color: #ffffff;">Only 10</div>
+            <div style="font-size: 12px; color: #555555; margin-top: 2px;">rank on page 1</div>
+          </div>
+          <div class="pl-8">
+            <div style="font-size: 20px; font-weight: 700; color: #ffffff;">3 Platforms</div>
+            <div style="font-size: 12px; color: #555555; margin-top: 2px;">Google + ChatGPT + Perplexity</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: CSS Mockup -->
+      <div class="fade-up hidden lg:block" style="transition-delay: 0.15s;">
+        <!-- SERP Mockup -->
+        <div class="serp-mockup">
+          <div class="serp-search-bar">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            property agent tampines singapore
+          </div>
+
+          <div class="serp-result">
+            <div class="serp-url">&#9679; acrevalabs.com &rsaquo; tampines</div>
+            <div class="serp-title"><span class="serp-rank-badge">#1</span> Top Property Agent Tampines | Free Valuation</div>
+            <div class="serp-desc">Tampines HDB &amp; EC specialist. 500+ completed transactions in Tampines. Free property valuation — call or WhatsApp today.</div>
+          </div>
+
+          <div class="serp-result" style="opacity: 0.45;">
+            <div class="serp-url">&#9679; propnex.com &rsaquo; agent</div>
+            <div class="serp-title" style="color: #666;">#2 &nbsp; Singapore Property Agent</div>
+            <div class="serp-desc">Find your agent today...</div>
+          </div>
+
+          <div class="serp-result" style="opacity: 0.25;">
+            <div class="serp-url">&#9679; era.com.sg</div>
+            <div class="serp-title" style="color: #555;">#3 &nbsp; ERA Realty Agent Search</div>
+          </div>
+        </div>
+
+        <!-- ChatGPT Mockup -->
+        <div class="chat-mockup">
+          <div class="chat-header">
+            <div class="chat-icon">G</div>
+            <div>
+              <div class="chat-name" style="color: #fff; font-weight: 600; font-size: 13px;">ChatGPT</div>
+              <div class="chat-name">AI-powered answer</div>
+            </div>
+          </div>
+          <div class="chat-text">
+            Based on available sources, <strong style="color: #fff;">this agent</strong> is frequently cited as one of the most experienced HDB specialists in Tampines, with over 500 documented transactions and strong reviews on PropertyGuru and Google.
+          </div>
+          <div class="chat-cite">
+            &#128279; Source cited: acrevalabs.com/tampines &nbsp;&bull;&nbsp; reddit.com/r/propertySG
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ===================== PROBLEM ===================== -->
+<section class="py-24 px-6" style="background-color: #111111;">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-16 fade-up">
+      <span class="section-label">01 — The Problem</span>
+      <h2 style="font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px; max-width: 600px;">
+        Most agents aren't invisible because they're bad at their job.
+      </h2>
+      <p style="font-size: 18px; color: #888888; margin-top: 16px; max-width: 520px; line-height: 1.7;">
+        They're invisible because no one built them a system to be found.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Pain 1 -->
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.05s;">
+        <div class="section-label mb-4" style="color: #4f8ef7;">Pain Point 01</div>
+        <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 12px;">You're invisible on Google</h3>
+        <p style="font-size: 15px; line-height: 1.7; color: #888888;">
+          When a buyer searches "property agent Tampines", your competitor shows up. You don't. That's not a content problem. That's a structure problem.
+        </p>
+      </div>
+
+      <!-- Pain 2 -->
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.1s;">
+        <div class="section-label mb-4" style="color: #4f8ef7;">Pain Point 02</div>
+        <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 12px;">AI search doesn't know you exist</h3>
+        <p style="font-size: 15px; line-height: 1.7; color: #888888;">
+          ChatGPT and Perplexity recommend agents to buyers daily. If your name isn't in the sources they pull from, you're not in the conversation.
+        </p>
+      </div>
+
+      <!-- Pain 3 -->
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.15s;">
+        <div class="section-label mb-4" style="color: #4f8ef7;">Pain Point 03</div>
+        <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Referrals dry up. Ads burn cash.</h3>
+        <p style="font-size: 15px; line-height: 1.7; color: #888888;">
+          Word of mouth isn't scalable. Paid ads stop the moment you stop paying. Organic search compounds. Every month it gets stronger — not more expensive.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ===================== SERVICES ===================== -->
+<section class="py-24 px-6" style="background-color: #0a0a0a;">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-16 fade-up">
+      <span class="section-label">02 — What We Do</span>
+      <h2 style="font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px;">
+        One system. Every place buyers search.
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- SEO -->
+      <a href="/services/seo/" class="card-hover fade-up block p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.0s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">SEO Foundation</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Rank on Google</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Rank for searches that matter — "property agent Tampines", "sell HDB Singapore", "buy condo district 10".</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">Learn more &rarr;</span>
+      </a>
+
+      <!-- AEO -->
+      <a href="/services/aeo/" class="card-hover fade-up block p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.05s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Answer Engine Optimisation</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Dominate AI Overviews</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Structure your content so Google AI Overviews serve your name when buyers ask questions.</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">Learn more &rarr;</span>
+      </a>
+
+      <!-- GEO -->
+      <a href="/services/geo/" class="card-hover fade-up block p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.1s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Generative Engine Optimisation</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Get Cited by ChatGPT</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Build the authority signals that make ChatGPT and Perplexity cite you as a trusted source.</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">Learn more &rarr;</span>
+      </a>
+
+      <!-- PR -->
+      <a href="/services/pr-mentions/" class="card-hover fade-up block p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.15s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">PR &amp; Brand Mentions</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Build Your Reputation Signal</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Get your name on the pages, forums, and publications AI learns from — Reddit, property blogs, news sites.</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">Learn more &rarr;</span>
+      </a>
+
+      <!-- Multi-Platform -->
+      <a href="/services/multi-platform/" class="card-hover fade-up block p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.2s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Multi-Platform Distribution</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Show Up Everywhere</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Google. ChatGPT. Perplexity. Bing. Google Maps. Show up everywhere your buyers are searching.</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">Learn more &rarr;</span>
+      </a>
+
+      <!-- CTA Card -->
+      <a href="/services/" class="card-hover fade-up block p-7 rounded-xl" style="background: #0f1929; border: 1px solid #1a2d4a; text-decoration: none; transition-delay: 0.25s;">
+        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">All Services</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">See the full system</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">View all five services and how they work together to build your search authority.</p>
+        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">View all services &rarr;</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ===================== PROCESS ===================== -->
+<section class="py-24 px-6" style="background-color: #111111;">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-16 fade-up">
+      <span class="section-label">03 — The Process</span>
+      <h2 style="font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px;">
+        A proven system, not guesswork.
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.0s;">
+        <div style="font-size: 48px; font-weight: 800; color: #1a1a1a; line-height: 1; margin-bottom: 16px;">01</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Audit</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">We map your current search presence, AI visibility gaps, and what your competitors are doing that you're not.</p>
+      </div>
+
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.07s;">
+        <div style="font-size: 48px; font-weight: 800; color: #1a1a1a; line-height: 1; margin-bottom: 16px;">02</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Strategy</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">We build a keyword and content cluster map targeting buyers and sellers in your area and price range.</p>
+      </div>
+
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.14s;">
+        <div style="font-size: 48px; font-weight: 800; color: #1a1a1a; line-height: 1; margin-bottom: 16px;">03</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Execute</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">On-page SEO, content, schema markup, PR mentions, and AI optimisation — built to compound over time.</p>
+      </div>
+
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.21s;">
+        <div style="font-size: 48px; font-weight: 800; color: #1a1a1a; line-height: 1; margin-bottom: 16px;">04</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Compound</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">We track, refine, and expand your authority every month. Rankings don't plateau — they build.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ===================== THE SHIFT ===================== -->
+<section class="py-24 px-6" style="background-color: #0a0a0a;">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-16 fade-up">
+      <span class="section-label">04 — The Shift</span>
+      <h2 style="font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px;">
+        Buyers don't just Google anymore.
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+      <!-- Stats -->
+      <div class="space-y-8">
+        <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222;">
+          <div style="font-size: 52px; font-weight: 800; color: #4f8ef7; line-height: 1; margin-bottom: 10px;">58%</div>
+          <p style="font-size: 15px; color: #888888; line-height: 1.6;">Click loss for #1 Google results when an AI Overview appears above them.</p>
+        </div>
+        <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.07s;">
+          <div style="font-size: 52px; font-weight: 800; color: #4f8ef7; line-height: 1; margin-bottom: 10px;">86%</div>
+          <p style="font-size: 15px; color: #888888; line-height: 1.6;">Of AI sources cited by each platform are unique — Google, ChatGPT, and Perplexity don't pull from the same places.</p>
+        </div>
+        <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.14s;">
+          <div style="font-size: 52px; font-weight: 800; color: #4f8ef7; line-height: 1; margin-bottom: 10px;">1B+</div>
+          <p style="font-size: 15px; color: #888888; line-height: 1.6;">Daily queries on ChatGPT. A growing share of them are asking for service provider recommendations.</p>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="fade-up" style="transition-delay: 0.1s;">
+        <p style="font-size: 17px; line-height: 1.8; color: #888888; margin-bottom: 20px;">
+          Search changed more in 2024–2025 than in the previous five years combined. AI Overviews now sit above the blue links. Buyers ask ChatGPT who to call. Perplexity writes summaries that recommend specific agents by name.
+        </p>
+        <p style="font-size: 17px; line-height: 1.8; color: #888888; margin-bottom: 20px;">
+          The agents winning in this new environment aren't necessarily the most experienced. They're the ones whose names are in the right places — the sources AI reads, trusts, and cites.
+        </p>
+        <p style="font-size: 17px; line-height: 1.8; color: #888888; margin-bottom: 32px;">
+          Most Singapore property agents aren't in any of those places yet. That's a window. We help you use it before your competitors figure it out.
+        </p>
+        <a href="/free-audit/" class="btn-primary">Get Your Free Audit &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ===================== RESULTS ===================== -->
+<section class="py-24 px-6" style="background-color: #111111;">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-16 fade-up">
+      <span class="section-label">05 — Results</span>
+      <h2 style="font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px;">
+        Built to rank. Proven to convert.
+      </h2>
+    </div>
+
+    <!-- PLACEHOLDER: replace with real client results -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.0s;">
+        <div style="font-size: 36px; font-weight: 800; color: #ffffff; margin-bottom: 12px;">312%</div>
+        <div style="font-size: 14px; color: #4f8ef7; font-weight: 600; margin-bottom: 12px;">increase in organic traffic</div>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 20px;">
+          Independent agent in Tampines — ranked page 1 for 8 target keywords in 90 days.
+        </p>
+        <div class="flex gap-2 flex-wrap">
+          <span style="font-size: 11px; background: #1a1a1a; border: 1px solid #2a2a2a; color: #888; padding: 3px 10px; border-radius: 4px;">Property Agent</span>
+          <span style="font-size: 11px; background: #1a1a1a; border: 1px solid #2a2a2a; color: #888; padding: 3px 10px; border-radius: 4px;">HDB Specialist</span>
+        </div>
+        <!-- PLACEHOLDER: replace with real client review -->
+      </div>
+
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.07s;">
+        <div style="font-size: 36px; font-weight: 800; color: #ffffff; margin-bottom: 12px;">47</div>
+        <div style="font-size: 14px; color: #4f8ef7; font-weight: 600; margin-bottom: 12px;">inbound leads in 30 days</div>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 20px;">
+          Mortgage broker cited in Google AI Overviews for "best home loan Singapore" queries.
+        </p>
+        <div class="flex gap-2 flex-wrap">
+          <span style="font-size: 11px; background: #1a1a1a; border: 1px solid #2a2a2a; color: #888; padding: 3px 10px; border-radius: 4px;">Mortgage Broker</span>
+          <span style="font-size: 11px; background: #1a1a1a; border: 1px solid #2a2a2a; color: #888; padding: 3px 10px; border-radius: 4px;">Refinancing</span>
+        </div>
+        <!-- PLACEHOLDER: replace with real client review -->
+      </div>
+
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.14s;">
+        <div style="font-size: 36px; font-weight: 800; color: #ffffff; margin-bottom: 12px;">#1</div>
+        <div style="font-size: 14px; color: #4f8ef7; font-weight: 600; margin-bottom: 12px;">featured in ChatGPT results</div>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 20px;">
+          Agent's name appears in ChatGPT responses for "property agent Jurong" — zero ad spend.
+        </p>
+        <div class="flex gap-2 flex-wrap">
+          <span style="font-size: 11px; background: #1a1a1a; border: 1px solid #2a2a2a; color: #888; padding: 3px 10px; border-radius: 4px;">Property Agent</span>
+          <span style="font-size: 11px; background: #1a1a1a; border: 1px solid #2a2a2a; color: #888; padding: 3px 10px; border-radius: 4px;">Condo Specialist</span>
+        </div>
+        <!-- PLACEHOLDER: replace with real client review -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ===================== CTA SECTION ===================== -->
+<section class="py-28 px-6 text-center" style="background-color: #0a0a0a;">
+  <div class="max-w-2xl mx-auto fade-up">
+    <span class="section-label">Get Started</span>
+    <h2 style="font-size: clamp(28px, 4vw, 48px); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px; margin-bottom: 16px;">
+      Find out exactly why your competitors rank above you.
+    </h2>
+    <p style="font-size: 17px; line-height: 1.7; color: #888888; margin-bottom: 36px;">
+      Free audit. No fluff. No hard sell. Results within 48 hours.
+    </p>
+    <a href="/free-audit/" class="btn-primary" style="font-size: 16px; padding: 14px 36px;">Get Your Free Audit</a>
+    <p style="font-size: 13px; color: #444; margin-top: 16px;">Takes 2 minutes to request.</p>
+
+    <!-- CALENDLY: swap with real embed -->
+    <div style="margin-top: 48px; background: #141414; border: 1px solid #222222; border-radius: 12px; padding: 40px; text-align: center;">
+      <p style="color: #555; font-size: 14px;"><!-- CALENDLY: swap with real Calendly embed here --></p>
+      <p style="color: #333; font-size: 12px; margin-top: 8px;">Calendly booking widget placeholder</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer style="background-color: #0a0a0a; border-top: 1px solid #1a1a1a; padding: 48px 24px 32px;">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+      <!-- Logo + tagline -->
+      <div>
+        <a href="/" class="text-white font-bold text-lg tracking-tight">AcrevaLabs</a>
+        <p style="font-size: 13px; color: #555555; margin-top: 8px; line-height: 1.6;">Singapore's Property Search Authority</p>
+      </div>
+      <!-- Links -->
+      <div class="flex flex-wrap gap-x-8 gap-y-3 md:justify-center">
+        <a href="/services/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Services</a>
+        <a href="/locations/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Locations</a>
+        <a href="/blog/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Blog</a>
+        <a href="/about/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">About</a>
+        <a href="/contact/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <!-- Right -->
+      <div class="md:text-right">
+        <p style="font-size: 13px; color: #555555;">Singapore &bull; acrevalabs.com</p>
+      </div>
+    </div>
+    <div style="border-top: 1px solid #1a1a1a; padding-top: 24px;">
+      <p style="font-size: 12px; color: #333333; text-align: center;">&copy; 2026 AcrevaLabs. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== JS ===================== -->
+<script>
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+
+  // Fade-up on scroll
+  const fadeEls = document.querySelectorAll('.fade-up');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  fadeEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
