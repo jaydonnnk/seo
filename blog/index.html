@@ -51,27 +51,36 @@
 <body class="min-h-screen">
 
   <!-- Navbar -->
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4" style="background-color: transparent;">
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <a href="/" class="text-white font-semibold text-lg tracking-tight">EstoraCore</a>
+      <a href="/" class="text-white font-bold text-xl tracking-tight" aria-label="EstoraCore Home">EstoraCore</a>
+      <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-8">
-        <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors">Services</a>
-        <a href="/locations/" class="text-sm text-[#888888] hover:text-white transition-colors">Locations</a>
-        <a href="/blog/" class="text-sm text-white font-medium">Blog</a>
-        <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors">About</a>
-        <a href="/contact/" class="btn-primary" style="padding: 9px 20px; font-size: 13px;">Get a Free Audit</a>
+        <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Services</a>
+        <a href="/locations/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Locations</a>
+        <a href="/blog/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Blog</a>
+        <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">About</a>
+        <a href="/contact/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Contact</a>
       </div>
-      <button id="hamburger" class="md:hidden text-[#888888] hover:text-white">
-        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <div class="hidden md:block">
+        <a href="/free-audit/" class="btn-ghost text-sm" style="padding: 9px 22px;">Get Free Audit</a>
+      </div>
+      <!-- Mobile Hamburger -->
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+        <span class="block w-5 h-0.5 bg-white transition-all duration-200"></span>
+        <span class="block w-5 h-0.5 bg-white transition-all duration-200"></span>
+        <span class="block w-5 h-0.5 bg-white transition-all duration-200"></span>
       </button>
     </div>
-    <div id="mobile-menu" class="md:hidden mt-4 pb-4 px-6">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden px-6 pb-4 pt-2">
       <div class="flex flex-col gap-4">
-        <a href="/services/" class="text-sm text-[#888888]">Services</a>
-        <a href="/locations/" class="text-sm text-[#888888]">Locations</a>
-        <a href="/blog/" class="text-sm text-white font-medium">Blog</a>
-        <a href="/about/" class="text-sm text-[#888888]">About</a>
-        <a href="/contact/" class="btn-primary text-center mt-2" style="padding: 9px 20px; font-size: 13px;">Get a Free Audit</a>
+        <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors">Services</a>
+        <a href="/locations/" class="text-sm text-[#888888] hover:text-white transition-colors">Locations</a>
+        <a href="/blog/" class="text-sm text-[#888888] hover:text-white transition-colors">Blog</a>
+        <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors">About</a>
+        <a href="/contact/" class="text-sm text-[#888888] hover:text-white transition-colors">Contact</a>
+        <a href="/free-audit/" class="btn-primary text-center" style="padding: 10px 22px; font-size: 14px;">Get Free Audit</a>
       </div>
     </div>
   </nav>
