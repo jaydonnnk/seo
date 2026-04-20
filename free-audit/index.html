@@ -156,7 +156,9 @@
 <!-- FORM + CALENDLY -->
 <section class="py-16 px-6">
   <div class="max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+
+    <!-- Form + Calendly side by side -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
 
       <!-- Form -->
       <div class="fade-up">
@@ -200,52 +202,52 @@
         </form>
       </div>
 
-      <!-- Why + Calendly -->
+      <!-- Calendly -->
       <div class="fade-up" style="transition-delay: 0.1s;">
-        <div class="space-y-4 mb-10">
-          <div class="check-item">
-            <div class="check-icon">
-              <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <p style="font-size: 15px; color: #888888; line-height: 1.6;">No fluff — you get specific findings, not generic advice</p>
-          </div>
-          <div class="check-item">
-            <div class="check-icon">
-              <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <p style="font-size: 15px; color: #888888; line-height: 1.6;">No hard sell — you won't be pressured into anything</p>
-          </div>
-          <div class="check-item">
-            <div class="check-icon">
-              <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <p style="font-size: 15px; color: #888888; line-height: 1.6;">Covers Google, AI search, technical issues, and GBP</p>
-          </div>
-          <div class="check-item">
-            <div class="check-icon">
-              <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <p style="font-size: 15px; color: #888888; line-height: 1.6;">Delivered within 48 hours of your request</p>
-          </div>
-          <div class="check-item">
-            <div class="check-icon">
-              <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <p style="font-size: 15px; color: #888888; line-height: 1.6;">Property-specific — not a generic checklist</p>
-          </div>
-        </div>
-
-        <!-- CALENDLY: swap with real embed -->
-        <div style="background: #141414; border: 1px solid #222222; border-radius: 12px; padding: 32px; text-align: center;">
-          <p style="font-size: 13px; color: #555; margin-bottom: 8px;">Prefer to book a call directly?</p>
-          <!-- CALENDLY: swap with real Calendly embed here -->
-          <div style="min-height: 60px; display: flex; align-items: center; justify-content: center;">
-            <p style="color: #333; font-size: 12px;">Calendly booking widget placeholder</p>
-          </div>
+        <h2 style="font-size: 22px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">Or book a call directly</h2>
+        <p style="font-size: 14px; color: #888888; margin-bottom: 28px;">Pick a time that works for you.</p>
+        <div style="background: #141414; border: 1px solid #222222; border-radius: 12px; overflow: hidden;">
+          <div class="calendly-inline-widget" data-url="https://calendly.com/jaydonkua5/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=141414&text_color=ffffff&primary_color=4f8ef7" style="min-width:280px;height:510px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </div>
       </div>
 
     </div>
+
+    <!-- Check items below -->
+    <div class="fade-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" style="margin-top: 48px; padding-top: 40px; border-top: 1px solid #1a1a1a;">
+      <div class="check-item">
+        <div class="check-icon">
+          <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <p style="font-size: 14px; color: #888888; line-height: 1.6;">No fluff — specific findings, not generic advice</p>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">
+          <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <p style="font-size: 14px; color: #888888; line-height: 1.6;">No hard sell — no pressure, ever</p>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">
+          <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <p style="font-size: 14px; color: #888888; line-height: 1.6;">Covers Google, AI search, technical SEO &amp; GBP</p>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">
+          <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <p style="font-size: 14px; color: #888888; line-height: 1.6;">Delivered within 48 hours</p>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">
+          <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <p style="font-size: 14px; color: #888888; line-height: 1.6;">Property-specific — not a generic checklist</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
