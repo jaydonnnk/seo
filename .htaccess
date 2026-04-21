@@ -1,0 +1,5 @@
+Redirect 301 /locations/tampines/geo-aeo/ /locations/tampines/ai-search-visibility/
+Redirect 301 /locations/jurong/geo-aeo/ /locations/jurong/ai-search-visibility/
+Redirect 301 /locations/woodlands/geo-aeo/ /locations/woodlands/ai-search-visibility/
+Redirect 301 /locations/orchard/geo-aeo/ /locations/orchard/ai-search-visibility/
+Redirect 301 /locations/bukit-timah/geo-aeo/ /locations/bukit-timah/ai-search-visibility/

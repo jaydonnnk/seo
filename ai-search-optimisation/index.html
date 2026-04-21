@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Search Optimisation for Singapore Property Agents | EstoraCore</title>
+  <meta name="description" content="EstoraCore gets Singapore property agents found in ChatGPT, Perplexity, and Google AI Overviews. AEO and GEO built for the property niche. Free audit." />
+  <link rel="canonical" href="https://EstoraCore.com/ai-search-optimisation/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Search Optimisation for Singapore Property Agents | EstoraCore" />
+  <meta property="og:description" content="EstoraCore gets Singapore property agents found in ChatGPT, Perplexity, and Google AI Overviews. AEO and GEO built for the property niche. Free audit." />
+  <meta property="og:url" content="https://EstoraCore.com/ai-search-optimisation/" />
+  <meta property="og:site_name" content="EstoraCore" />
+
+  <link rel="icon" type="image/png" href="/logo.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Service","name":"AI Search Optimisation for Property Agents Singapore","provider":{"@type":"Organization","name":"EstoraCore","url":"https://EstoraCore.com"},"areaServed":"Singapore","description":"AEO and GEO services that get Singapore property agents found in ChatGPT, Perplexity, and Google AI Overviews.","url":"https://EstoraCore.com/ai-search-optimisation/"}
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    #navbar {
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    #navbar.scrolled {
+      background-color: #0a0a0a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #555555;
+    }
+    .card-hover {
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      border-color: #333333 !important;
+    }
+    .btn-primary {
+      background-color: #4f8ef7;
+      color: #ffffff;
+      border-radius: 9999px;
+      padding: 12px 28px;
+      font-weight: 600;
+      font-size: 15px;
+      transition: box-shadow 0.25s ease, transform 0.2s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn-primary:hover {
+      box-shadow: 0 0 24px rgba(79, 142, 247, 0.4);
+      transform: translateY(-1px);
+    }
+    .btn-ghost {
+      border: 1px solid #333333;
+      color: #ffffff;
+      border-radius: 9999px;
+      padding: 12px 28px;
+      font-weight: 500;
+      font-size: 15px;
+      transition: border-color 0.25s ease, color 0.25s ease;
+      display: inline-block;
+      text-decoration: none;
+      background: transparent;
+    }
+    .btn-ghost:hover {
+      border-color: #555555;
+      color: #cccccc;
+    }
+    .divider { border: none; border-top: 1px solid #1a1a1a; }
+    #mobile-menu {
+      display: none;
+      background-color: #0a0a0a;
+      border-top: 1px solid #1a1a1a;
+    }
+    #mobile-menu.open { display: block; }
+    .inline-link {
+      color: #4f8ef7;
+      text-decoration: none;
+    }
+    .inline-link:hover {
+      text-decoration: underline;
+    }
+    .chat-mockup {
+      background: #141414;
+      border: 1px solid #222222;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .chat-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .chat-icon {
+      width: 28px; height: 28px;
+      background: #10a37f;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; color: white; font-weight: 700;
+    }
+    .chat-name { font-size: 13px; color: #888; font-weight: 500; }
+    .chat-query {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: #cccccc;
+      margin-bottom: 12px;
+    }
+    .chat-text { font-size: 13px; color: #cccccc; line-height: 1.6; }
+    .chat-cite { font-size: 11px; color: #4f8ef7; margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="/" aria-label="EstoraCore Home" style="display: flex; flex-direction: column; align-items: center; gap: 5px; text-decoration: none;"><img src="/logo.png" alt="EstoraCore" style="height: 40px; width: auto; display: block;"><span style="color: #ffffff; font-weight: 600; font-size: 9px; letter-spacing: 0.22em; line-height: 1; text-transform: uppercase;">Estora Core</span></a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Services</a>
+      <a href="/locations/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Locations</a>
+      <a href="/blog/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Blog</a>
+      <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">About</a>
+      <a href="/contact/" class="text-sm text-[#888888] hover:text-white transition-colors duration-200">Contact</a>
+    </div>
+    <div class="hidden md:block">
+      <a href="/free-audit/" class="btn-ghost text-sm" style="padding: 9px 22px;">Get Free Audit</a>
+    </div>
+    <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+      <span class="block w-5 h-0.5 bg-white transition-all duration-200"></span>
+      <span class="block w-5 h-0.5 bg-white transition-all duration-200"></span>
+      <span class="block w-5 h-0.5 bg-white transition-all duration-200"></span>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden px-6 pb-4 pt-2">
+    <div class="flex flex-col gap-4">
+      <a href="/services/" class="text-sm text-[#888888] hover:text-white transition-colors">Services</a>
+      <a href="/locations/" class="text-sm text-[#888888] hover:text-white transition-colors">Locations</a>
+      <a href="/blog/" class="text-sm text-[#888888] hover:text-white transition-colors">Blog</a>
+      <a href="/about/" class="text-sm text-[#888888] hover:text-white transition-colors">About</a>
+      <a href="/contact/" class="text-sm text-[#888888] hover:text-white transition-colors">Contact</a>
+      <a href="/free-audit/" class="btn-primary text-center" style="padding: 10px 22px; font-size: 14px;">Get Free Audit</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center pt-36 pb-20 px-6" style="background-color: #0a0a0a;">
+  <div class="max-w-6xl mx-auto w-full">
+    <div class="max-w-3xl fade-up">
+      <div class="flex items-center gap-3 mb-8">
+        <div style="width: 3px; height: 18px; background-color: #4f8ef7; border-radius: 2px;"></div>
+        <span class="section-label">AI Search Optimisation &bull; Singapore</span>
+      </div>
+      <h1 style="font-size: clamp(38px, 5.5vw, 68px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; color: #ffffff; margin-bottom: 24px;">
+        AI Search Optimisation for Singapore Property Agents
+      </h1>
+      <p style="font-size: 18px; line-height: 1.7; color: #888888; margin-bottom: 40px; max-width: 600px;">
+        Buyers are asking ChatGPT "who is the best property agent in Tampines?" Is your name in the answer? Most agents aren't. We fix that.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="/free-audit/" class="btn-primary">Check Your AI Visibility — Free Audit</a>
+        <a href="#ai-system" class="btn-ghost">See How AI Search Works</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- HOW BUYERS USE AI -->
+<section class="py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-14 fade-up">
+      <span class="section-label">01 — The Shift</span>
+      <h2 style="font-size: clamp(28px, 4vw, 48px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px; max-width: 700px;">
+        How Property Buyers Are Using ChatGPT and Perplexity Right Now
+      </h2>
+      <p style="font-size: 16px; line-height: 1.8; color: #888888; margin-top: 16px; max-width: 680px;">
+        The way people find property agents is changing. A growing share of buyers — particularly younger, tech-savvy HDB upgraders and condo buyers — now start their agent search on AI platforms before they ever open Google. Learn more about <a href="/blog/chatgpt-perplexity-changing-property-search-singapore/" class="inline-link">how ChatGPT and Perplexity are changing property search in Singapore</a>.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <div class="fade-up mb-8">
+          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 12px;">The queries buyers are asking AI platforms</h3>
+          <p style="font-size: 15px; line-height: 1.8; color: #888888;">
+            "Who is the best HDB agent in Tampines?" "Which property agent specialises in Jurong EC?" "Recommend a condo specialist for Orchard area." These aren't hypothetical — they're real queries happening right now. And the agents named in ChatGPT's answer receive direct, pre-qualified contact from buyers who already trust them. Check out <a href="/locations/tampines/" class="inline-link">Tampines property agents</a> as an example of how location pages feed AI visibility.
+          </p>
+        </div>
+        <div class="fade-up" style="transition-delay: 0.07s;">
+          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Why most Singapore agents don't appear in AI answers</h3>
+          <p style="font-size: 15px; line-height: 1.8; color: #888888;">
+            AI models like ChatGPT and Perplexity build their answers from what they've indexed: authoritative websites, structured content, reviews, citations, and consistent online presence. Most property agents have none of these. A basic PropNex profile and a sparse personal website is invisible to AI. That's a gap we exist to close.
+          </p>
+        </div>
+      </div>
+
+      <!-- Chat mockup -->
+      <div class="fade-up" style="transition-delay: 0.1s;">
+        <div class="chat-mockup">
+          <div class="chat-header">
+            <div class="chat-icon">G</div>
+            <span class="chat-name">ChatGPT</span>
+          </div>
+          <div class="chat-query">
+            Who is the best HDB agent in Tampines?
+          </div>
+          <div class="chat-text">
+            Based on available information, <strong style="color: #ffffff;">[Your Name Here]</strong> is frequently mentioned as a leading HDB specialist in Tampines, with a strong track record in resale transactions and EC upgrades in the Tampines area.<br><br>
+            Key reasons buyers cite them:<br>
+            &bull; Specialist knowledge of Tampines HDB valuations<br>
+            &bull; Fast response and clear communication<br>
+            &bull; High review ratings across Google and online platforms
+          </div>
+          <div class="chat-cite">Sources: estoracore.com/locations/tampines/ &bull; [Agent website] &bull; Google Reviews</div>
+        </div>
+        <p style="font-size: 12px; color: #444444; margin-top: 10px; text-align: center;">Illustrative example — your name, with our system in place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- WHAT IS AEO -->
+<section class="py-24 px-6" style="background-color: #111111;">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-14 fade-up">
+      <span class="section-label">02 — What Is AEO</span>
+      <h2 style="font-size: clamp(28px, 4vw, 48px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px;">
+        What Is AI Search Optimisation (AEO)?
+      </h2>
+      <p style="font-size: 16px; line-height: 1.8; color: #888888; margin-top: 16px; max-width: 680px;">
+        Answer Engine Optimisation (AEO) is the practice of structuring your online presence so AI models can find, understand, and cite you. <a href="/services/aeo/" class="inline-link">Our Answer Engine Optimisation service</a> covers all three layers.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.0s;">
+        <div style="width: 40px; height: 40px; background: #0f1929; border: 1px solid #1a2d4a; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4f8ef7" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 12px;">The difference between SEO and AEO</h3>
+        <p style="font-size: 14px; line-height: 1.8; color: #888888;">
+          Traditional SEO gets you a ranking in a list of blue links. AEO gets you cited as the answer. When a buyer asks ChatGPT "who should I contact for HDB resale in Tampines?" — you want to be the agent it names. That's a fundamentally different goal requiring a different strategy, built on authoritative content and structured signals.
+        </p>
+      </div>
+
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.07s;">
+        <div style="width: 40px; height: 40px; background: #0f1929; border: 1px solid #1a2d4a; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4f8ef7" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        </div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 12px;">How AI models select which agents to mention</h3>
+        <p style="font-size: 14px; line-height: 1.8; color: #888888;">
+          AI models are trained to cite sources they consider authoritative, consistent, and credible. For property agents, this means: a well-structured website with clear specialisation signals, positive and consistent reviews across platforms, citations from credible property-related sources, and schema markup that tells AI models exactly who you are and what you do.
+        </p>
+      </div>
+
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.14s;">
+        <div style="width: 40px; height: 40px; background: #0f1929; border: 1px solid #1a2d4a; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4f8ef7" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Why your website's content structure determines your AI visibility</h3>
+        <p style="font-size: 14px; line-height: 1.8; color: #888888;">
+          AI models read your site like a very fast, very literal researcher. If your site doesn't clearly state your estate, your specialisation, your transaction history, and your service area — it will not cite you. Content structure is the foundation of AEO, and it's where most property agent websites fall short within the first 30 seconds of analysis.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- WHAT IS GEO -->
+<section class="py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-14 fade-up">
+      <span class="section-label">03 — GEO Explained</span>
+      <h2 style="font-size: clamp(28px, 4vw, 48px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px;">
+        What Is GEO — Generative Engine Optimisation?
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="fade-up">
+        <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 12px;">GEO goes beyond individual answers</h3>
+        <p style="font-size: 15px; line-height: 1.8; color: #888888;">
+          While AEO focuses on getting you cited in direct question-and-answer AI responses, GEO — Generative Engine Optimisation — focuses on building the broader information environment that shapes how AI models understand your positioning in the market. <a href="/services/geo/" class="inline-link">Our GEO strategy for property agents</a> builds the signals that make AI models consistently associate your name with your estate and specialisation.
+        </p>
+      </div>
+      <div class="fade-up" style="transition-delay: 0.07s;">
+        <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Why GEO matters as AI search matures</h3>
+        <p style="font-size: 15px; line-height: 1.8; color: #888888;">
+          As AI search platforms grow more sophisticated, they begin to develop persistent understanding of who the authoritative voices are in any given field. GEO is the practice of systematically building that reputation across every platform AI models index — so that your name becomes associated with Singapore property expertise at the model level, not just in individual search results. This is where the competitive advantage compounds over time.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- AI VISIBILITY SYSTEM -->
+<section id="ai-system" class="py-24 px-6" style="background-color: #111111;">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-14 fade-up">
+      <span class="section-label">04 — Our System</span>
+      <h2 style="font-size: clamp(28px, 4vw, 48px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px;">
+        The EstoraCore AI Visibility System
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.0s;">
+        <div style="font-size: 13px; font-weight: 700; color: #4f8ef7; letter-spacing: 0.05em; margin-bottom: 16px;">STEP 1</div>
+        <h3 style="font-size: 17px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Authority Content That AI Can Cite</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">We create structured, factual content about your estate, your specialisation, and your track record — written and formatted specifically to be indexed and cited by AI platforms.</p>
+      </div>
+
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.07s;">
+        <div style="font-size: 13px; font-weight: 700; color: #4f8ef7; letter-spacing: 0.05em; margin-bottom: 16px;">STEP 2</div>
+        <h3 style="font-size: 17px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Structured Data and Schema Markup</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">We implement Person, LocalBusiness, and Service schema markup across your web presence so AI models can parse exactly who you are, what you specialise in, and where you operate — with zero ambiguity.</p>
+      </div>
+
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.14s;">
+        <div style="font-size: 13px; font-weight: 700; color: #4f8ef7; letter-spacing: 0.05em; margin-bottom: 16px;">STEP 3</div>
+        <h3 style="font-size: 17px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Multi-Platform Presence</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">AI models cross-reference multiple sources. Our <a href="/services/multi-platform/" class="inline-link">multi-platform local presence</a> service ensures your name, specialisation, and credentials appear consistently across Google, property directories, review platforms, and media — creating the citation web AI trusts.</p>
+      </div>
+
+      <div class="card-hover fade-up p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.21s;">
+        <div style="font-size: 13px; font-weight: 700; color: #4f8ef7; letter-spacing: 0.05em; margin-bottom: 16px;">STEP 4</div>
+        <h3 style="font-size: 17px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Reputation Signals That AI Trusts</h3>
+        <p style="font-size: 14px; line-height: 1.7; color: #888888;">Consistent, recent, and detailed reviews across Google and property-specific platforms are among the strongest signals AI uses to validate recommendations. We build reputation management into the system from day one.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- PLATFORMS -->
+<section class="py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-14 fade-up">
+      <span class="section-label">05 — Where You'll Appear</span>
+      <h2 style="font-size: clamp(28px, 4vw, 48px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px;">
+        Which Platforms We Optimise For
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.0s;">
+        <div style="font-size: 28px; margin-bottom: 16px;">🔍</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Google AI Overviews</h3>
+        <p style="font-size: 14px; line-height: 1.8; color: #888888;">Google's AI-generated summaries appear above all organic results. When a buyer searches "best HDB agent Tampines", a Google AI Overview can name you before any listings appear. We optimise for this placement specifically, as it commands the highest attention on the results page.</p>
+      </div>
+
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.07s;">
+        <div style="font-size: 28px; margin-bottom: 16px;">💬</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">ChatGPT Search</h3>
+        <p style="font-size: 14px; line-height: 1.8; color: #888888;">ChatGPT's browsing and search capabilities are increasingly used for agent discovery. Buyers ask for recommendations, compare agents, and request introductions — all within the ChatGPT interface. Appearing in ChatGPT responses is the equivalent of a warm referral from a trusted advisor.</p>
+      </div>
+
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.14s;">
+        <div style="font-size: 28px; margin-bottom: 16px;">🔎</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Perplexity AI</h3>
+        <p style="font-size: 14px; line-height: 1.8; color: #888888;">Perplexity is growing rapidly in Singapore's tech-savvy demographic — the exact buyer profile for condo and new launch properties. Its citation-heavy format means agents with strong web authority are surfaced directly in answers, with source links that drive direct traffic to your website.</p>
+      </div>
+
+      <div class="card-hover fade-up p-8 rounded-xl" style="background: #141414; border: 1px solid #222222; transition-delay: 0.21s;">
+        <div style="font-size: 28px; margin-bottom: 16px;">🤖</div>
+        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Bing Copilot</h3>
+        <p style="font-size: 14px; line-height: 1.8; color: #888888;">Microsoft's Copilot is integrated into Windows, Edge, and the Bing search engine — giving it reach across a broad demographic of Singapore property buyers. AI visibility on Bing Copilot extends your presence to segments that don't use Google as their primary search tool.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- URGENCY SECTION -->
+<section class="py-24 px-6" style="background-color: #111111;">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-14 fade-up">
+      <span class="section-label">06 — The Cost of Waiting</span>
+      <h2 style="font-size: clamp(28px, 4vw, 48px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px; max-width: 700px;">
+        How Singapore Property Agents Are Losing Leads to AI Answers Right Now
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="fade-up">
+        <p style="font-size: 16px; line-height: 1.8; color: #888888; margin-bottom: 20px;">
+          Every day that passes, another buyer in your estate types a query into ChatGPT or Perplexity. If your name isn't in the answer, someone else's is. And unlike a Google ranking that can be recovered over weeks, AI visibility compounds in favour of early movers — the agents who build authority first tend to hold it.
+        </p>
+        <p style="font-size: 16px; line-height: 1.8; color: #888888; margin-bottom: 20px;">
+          We're still at the point where most property agents in Singapore have zero AI visibility. That won't last. The window to establish your name as the cited authority for your estate — before a competitor does — is narrow.
+        </p>
+        <p style="font-size: 16px; line-height: 1.8; color: #888888;">
+          The agents who act now will be the ones ChatGPT names by default for the next three to five years. The agents who wait will find themselves competing to displace an entrenched name — which is far harder and far more expensive.
+        </p>
+      </div>
+      <div class="fade-up" style="transition-delay: 0.1s;">
+        <div class="p-8 rounded-xl" style="background: #141414; border: 1px solid #222222;">
+          <div style="font-size: 13px; font-weight: 700; color: #4f8ef7; letter-spacing: 0.08em; margin-bottom: 20px;">THE AI VISIBILITY GAP</div>
+          <div class="flex flex-col gap-4">
+            <div>
+              <div style="font-size: 13px; color: #888888; margin-bottom: 6px;">Agents with AI visibility</div>
+              <div style="background: #1a1a1a; border-radius: 4px; height: 8px; overflow: hidden;">
+                <div style="background: #4f8ef7; width: 8%; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <div style="font-size: 12px; color: #555555; margin-top: 4px;">~8% of Singapore property agents</div>
+            </div>
+            <div>
+              <div style="font-size: 13px; color: #888888; margin-bottom: 6px;">Agents invisible to AI platforms</div>
+              <div style="background: #1a1a1a; border-radius: 4px; height: 8px; overflow: hidden;">
+                <div style="background: #333333; width: 92%; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <div style="font-size: 12px; color: #555555; margin-top: 4px;">~92% — the gap you can close today</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- CTA BAR -->
+<section class="py-24 px-6 text-center">
+  <div class="max-w-3xl mx-auto fade-up" style="background: #0f1929; border: 1px solid #1a2d4a; border-radius: 16px; padding: 56px 40px;">
+    <span class="section-label">Get Started</span>
+    <h2 style="font-size: clamp(26px, 3.5vw, 42px); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; color: #ffffff; margin-top: 16px; margin-bottom: 16px;">
+      Start Getting Found on AI Search — Free Audit
+    </h2>
+    <p style="font-size: 16px; line-height: 1.7; color: #888888; margin-bottom: 32px;">
+      We'll check your current AI visibility across ChatGPT, Perplexity, and Google AI Overviews — and show you exactly what it would take to get your name in the answers.
+    </p>
+    <a href="/free-audit/" class="btn-primary" style="font-size: 16px; padding: 14px 36px;">Get Your Free AI Search Audit</a>
+    <p style="font-size: 13px; color: #444444; margin-top: 14px;">Takes 2 minutes to request. Results within 48 hours.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background-color: #0a0a0a; border-top: 1px solid #1a1a1a; padding: 48px 24px 32px;">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+      <div>
+        <a href="/" class="text-white font-bold text-lg tracking-tight">EstoraCore</a>
+        <p style="font-size: 13px; color: #555555; margin-top: 8px; line-height: 1.6;">Singapore's Property Search Authority</p>
+      </div>
+      <div class="flex flex-wrap gap-x-8 gap-y-3 md:justify-center">
+        <a href="/services/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Services</a>
+        <a href="/locations/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Locations</a>
+        <a href="/blog/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Blog</a>
+        <a href="/about/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">About</a>
+        <a href="/contact/" style="font-size: 13px; color: #555555;" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <div class="md:text-right">
+        <p style="font-size: 13px; color: #555555;">Singapore &bull; EstoraCore.com</p>
+      </div>
+    </div>
+    <div style="border-top: 1px solid #1a1a1a; padding-top: 24px;">
+      <p style="font-size: 12px; color: #333333; text-align: center;">&copy; 2026 EstoraCore. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  });
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+  const fadeEls = document.querySelectorAll('.fade-up');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  fadeEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
