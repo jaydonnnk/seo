@@ -210,6 +210,109 @@
       border-top: 1px solid #1a1a1a;
     }
     #mobile-menu.open { display: block; }
+
+    /* Services slider */
+    #services-slider {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #222222;
+      min-height: 480px;
+      background: #141414;
+    }
+    .slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.75s ease;
+      pointer-events: none;
+    }
+    .slide.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .slide-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top,
+        rgba(0,0,0,0.90) 0%,
+        rgba(0,0,0,0.55) 45%,
+        rgba(0,0,0,0.20) 100%
+      );
+    }
+    .slide-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 48px 52px 56px;
+    }
+    @media (max-width: 640px) {
+      .slide-content { padding: 32px 24px 44px; }
+      #services-slider { min-height: 420px; }
+    }
+    .slide-progress {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: #4f8ef7;
+      border-radius: 0 2px 0 0;
+      box-shadow: 0 0 8px rgba(79,142,247,0.65);
+      z-index: 5;
+    }
+    .slide-progress.animating {
+      animation: sliderProgress 2s linear forwards;
+    }
+    @keyframes sliderProgress {
+      from { width: 0%; }
+      to   { width: 100%; }
+    }
+    .slider-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      background: rgba(14,14,14,0.75);
+      border: 1px solid #333333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .slider-arrow:hover {
+      background: rgba(79,142,247,0.2);
+      border-color: #4f8ef7;
+    }
+    #slider-prev { left: 16px; }
+    #slider-next { right: 16px; }
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 20px;
+    }
+    .slider-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #333333;
+      border: 1px solid #2a2a2a;
+      cursor: pointer;
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+    .slider-dot.active {
+      background: #4f8ef7;
+      border-color: #4f8ef7;
+      transform: scale(1.3);
+    }
   </style>
 </head>
 <body>
@@ -404,57 +507,90 @@
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <!-- Slider -->
+    <div id="services-slider" class="fade-up">
 
-      <!-- SEO -->
-      <a href="/services/seo/" class="card-hover fade-up block p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.0s;">
-        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">SEO Foundation</div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Rank on Google</h3>
-        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Rank for searches that matter — "property agent Tampines", "sell HDB Singapore", "buy condo district 10".</p>
-        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">Learn more &rarr;</span>
-      </a>
+      <!-- Slide 1: SEO Foundation -->
+      <div class="slide" style="background-image: url('/images/slide1.jpg');">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">SEO Foundation</div>
+          <h3 style="font-size: clamp(26px, 3vw, 40px); font-weight: 700; color: #ffffff; margin-bottom: 14px; letter-spacing: -0.015em; line-height: 1.15;">Rank on Google</h3>
+          <p style="font-size: 16px; line-height: 1.7; color: rgba(255,255,255,0.72); margin-bottom: 28px; max-width: 540px;">Rank for searches that matter — "property agent Tampines", "sell HDB Singapore", "buy condo district 10".</p>
+          <a href="/services/seo/" class="btn-ghost">Learn more &rarr;</a>
+        </div>
+        <div class="slide-progress"></div>
+      </div>
 
-      <!-- AEO -->
-      <a href="/services/aeo/" class="card-hover fade-up block p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.05s;">
-        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Answer Engine Optimisation</div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Dominate AI Overviews</h3>
-        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Structure your content so Google AI Overviews serve your name when buyers ask questions.</p>
-        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">Learn more &rarr;</span>
-      </a>
+      <!-- Slide 2: AEO -->
+      <div class="slide" style="background-image: url('/images/slide2.jpg');">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Answer Engine Optimisation</div>
+          <h3 style="font-size: clamp(26px, 3vw, 40px); font-weight: 700; color: #ffffff; margin-bottom: 14px; letter-spacing: -0.015em; line-height: 1.15;">Dominate AI Overviews</h3>
+          <p style="font-size: 16px; line-height: 1.7; color: rgba(255,255,255,0.72); margin-bottom: 28px; max-width: 540px;">Structure your content so Google AI Overviews serve your name when buyers ask questions.</p>
+          <a href="/services/aeo/" class="btn-ghost">Learn more &rarr;</a>
+        </div>
+        <div class="slide-progress"></div>
+      </div>
 
-      <!-- GEO -->
-      <a href="/services/geo/" class="card-hover fade-up block p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.1s;">
-        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Generative Engine Optimisation</div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Get Cited by ChatGPT</h3>
-        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Build the authority signals that make ChatGPT and Perplexity cite you as a trusted source.</p>
-        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">Learn more &rarr;</span>
-      </a>
+      <!-- Slide 3: GEO -->
+      <div class="slide" style="background-image: url('/images/slide3.jpg');">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Generative Engine Optimisation</div>
+          <h3 style="font-size: clamp(26px, 3vw, 40px); font-weight: 700; color: #ffffff; margin-bottom: 14px; letter-spacing: -0.015em; line-height: 1.15;">Get Cited by ChatGPT</h3>
+          <p style="font-size: 16px; line-height: 1.7; color: rgba(255,255,255,0.72); margin-bottom: 28px; max-width: 540px;">Build the authority signals that make ChatGPT and Perplexity cite you as a trusted source.</p>
+          <a href="/services/geo/" class="btn-ghost">Learn more &rarr;</a>
+        </div>
+        <div class="slide-progress"></div>
+      </div>
 
-      <!-- PR -->
-      <a href="/services/pr-mentions/" class="card-hover fade-up block p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.15s;">
-        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">PR &amp; Brand Mentions</div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Build Your Reputation Signal</h3>
-        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Get your name on the pages, forums, and publications AI learns from — Reddit, property blogs, news sites.</p>
-        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">Learn more &rarr;</span>
-      </a>
+      <!-- Slide 4: PR & Brand Mentions -->
+      <div class="slide" style="background-image: url('/images/slide4.jpg');">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">PR &amp; Brand Mentions</div>
+          <h3 style="font-size: clamp(26px, 3vw, 40px); font-weight: 700; color: #ffffff; margin-bottom: 14px; letter-spacing: -0.015em; line-height: 1.15;">Build Your Reputation Signal</h3>
+          <p style="font-size: 16px; line-height: 1.7; color: rgba(255,255,255,0.72); margin-bottom: 28px; max-width: 540px;">Get your name on the pages, forums, and publications AI learns from — Reddit, property blogs, news sites.</p>
+          <a href="/services/pr-mentions/" class="btn-ghost">Learn more &rarr;</a>
+        </div>
+        <div class="slide-progress"></div>
+      </div>
 
-      <!-- Multi-Platform -->
-      <a href="/services/multi-platform/" class="card-hover fade-up block p-7 rounded-xl" style="background: #141414; border: 1px solid #222222; text-decoration: none; transition-delay: 0.2s;">
-        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Multi-Platform Distribution</div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Show Up Everywhere</h3>
-        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">Google. ChatGPT. Perplexity. Bing. Google Maps. Show up everywhere your buyers are searching.</p>
-        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">Learn more &rarr;</span>
-      </a>
+      <!-- Slide 5: Multi-Platform -->
+      <div class="slide" style="background-image: url('/images/slide5.jpg');">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">Multi-Platform Distribution</div>
+          <h3 style="font-size: clamp(26px, 3vw, 40px); font-weight: 700; color: #ffffff; margin-bottom: 14px; letter-spacing: -0.015em; line-height: 1.15;">Show Up Everywhere</h3>
+          <p style="font-size: 16px; line-height: 1.7; color: rgba(255,255,255,0.72); margin-bottom: 28px; max-width: 540px;">Google. ChatGPT. Perplexity. Bing. Google Maps. Show up everywhere your buyers are searching.</p>
+          <a href="/services/multi-platform/" class="btn-ghost">Learn more &rarr;</a>
+        </div>
+        <div class="slide-progress"></div>
+      </div>
 
-      <!-- CTA Card -->
-      <a href="/services/" class="card-hover fade-up block p-7 rounded-xl" style="background: #0f1929; border: 1px solid #1a2d4a; text-decoration: none; transition-delay: 0.25s;">
-        <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #4f8ef7; margin-bottom: 14px;">All Services</div>
-        <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">See the full system</h3>
-        <p style="font-size: 14px; line-height: 1.7; color: #888888; margin-bottom: 16px;">View all five services and how they work together to build your search authority.</p>
-        <span style="font-size: 13px; color: #4f8ef7; font-weight: 500;">View all services &rarr;</span>
-      </a>
+      <!-- Left arrow -->
+      <button id="slider-prev" class="slider-arrow" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <!-- Right arrow -->
+      <button id="slider-next" class="slider-arrow" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
 
     </div>
+
+    <!-- Dot indicators -->
+    <div class="slider-dots" role="tablist" aria-label="Slide indicators">
+      <div class="slider-dot" role="tab" data-index="0" aria-label="Slide 1"></div>
+      <div class="slider-dot" role="tab" data-index="1" aria-label="Slide 2"></div>
+      <div class="slider-dot" role="tab" data-index="2" aria-label="Slide 3"></div>
+      <div class="slider-dot" role="tab" data-index="3" aria-label="Slide 4"></div>
+      <div class="slider-dot" role="tab" data-index="4" aria-label="Slide 5"></div>
+    </div>
+
   </div>
 </section>
 
@@ -683,6 +819,83 @@
     });
   }, { threshold: 0.1 });
   fadeEls.forEach(el => observer.observe(el));
+</script>
+
+<!-- Services Slider JS -->
+<script>
+(function () {
+  var sliderWrap = document.getElementById('services-slider');
+  if (!sliderWrap) return;
+
+  var slides      = sliderWrap.querySelectorAll('.slide');
+  var progBars    = sliderWrap.querySelectorAll('.slide-progress');
+  var dots        = document.querySelectorAll('.slider-dot');
+  var prevBtn     = document.getElementById('slider-prev');
+  var nextBtn     = document.getElementById('slider-next');
+  var total       = slides.length;
+  var current     = 0;
+  var timer       = null;
+  var INTERVAL    = 2000;
+
+  function activate(index) {
+    // Deactivate outgoing slide
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+
+    // Reset progress bar on outgoing slide (kill animation)
+    progBars[current].classList.remove('animating');
+
+    current = (index + total) % total;
+
+    // Activate incoming slide
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+
+    // Restart progress animation on incoming slide
+    // Force reflow so the browser resets the animation from 0
+    progBars[current].classList.remove('animating');
+    progBars[current].offsetWidth; // eslint-disable-line no-unused-expressions
+    progBars[current].classList.add('animating');
+  }
+
+  function startTimer() {
+    clearInterval(timer);
+    timer = setInterval(function () {
+      activate(current + 1);
+    }, INTERVAL);
+  }
+
+  function stopTimer() {
+    clearInterval(timer);
+  }
+
+  // Initialise first slide
+  activate(0);
+  startTimer();
+
+  // Arrow buttons
+  prevBtn.addEventListener('click', function () {
+    activate(current - 1);
+    startTimer();
+  });
+  nextBtn.addEventListener('click', function () {
+    activate(current + 1);
+    startTimer();
+  });
+
+  // Dot clicks
+  dots.forEach(function (dot) {
+    dot.addEventListener('click', function () {
+      var idx = Number.parseInt(dot.dataset.index, 10);
+      activate(idx);
+      startTimer();
+    });
+  });
+
+  // Pause on hover
+  sliderWrap.addEventListener('mouseenter', stopTimer);
+  sliderWrap.addEventListener('mouseleave', startTimer);
+})();
 </script>
 
 </body>
