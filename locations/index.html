@@ -99,38 +99,76 @@
 <!-- WHY LOCAL SEO -->
 <section class="py-16 px-6">
   <div class="max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
-      <div class="fade-up">
-        <span class="section-label">Why location matters</span>
-        <h2 style="font-size: clamp(22px, 2.5vw, 34px); font-weight: 700; line-height: 1.2; color: #ffffff; margin-top: 16px; margin-bottom: 20px;">
-          Buyers search by area. You need to rank in their area.
-        </h2>
-        <p style="font-size: 16px; line-height: 1.8; color: #888888; margin-bottom: 16px;">
-          No buyer types "property agent Singapore" and expects a useful result. They type "property agent Tampines", "sell 4-room flat Woodlands", "HDB agent Jurong West". Every search is location-specific.
-        </p>
-        <p style="font-size: 16px; line-height: 1.8; color: #888888; margin-bottom: 16px;">
-          Generic SEO targets broad terms nobody uses or terms portals dominate. Location SEO targets the exact searches your buyers make when they're ready to contact someone — and positions you as the clear local authority.
-        </p>
-        <p style="font-size: 16px; line-height: 1.8; color: #888888;">
-          A Tampines agent with deep Tampines SEO will outrank PropNex and ERA on Tampines-specific searches. That's the asymmetry local SEO creates.
-        </p>
-      </div>
-      <div class="fade-up" style="transition-delay: 0.1s;">
-        <div class="space-y-4">
-          <div class="card-hover p-5 rounded-xl" style="background: #141414; border: 1px solid #222222;">
-            <div style="font-size: 13px; color: #4f8ef7; font-weight: 600; margin-bottom: 6px;">Specific beats broad</div>
-            <p style="font-size: 14px; color: #888888; line-height: 1.6;">"Property agent Tampines HDB" has less competition and higher buying intent than "property agent Singapore". Local keywords convert at a higher rate.</p>
+
+    <!-- Mobile-only eyebrow (above the card) -->
+    <div class="md:hidden fade-up" style="font-size: 12px; color: #555; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 16px;">Why location matters</div>
+
+    <div class="fade-up grid grid-cols-1 md:grid-cols-2" style="background: #0c0c0c; border-radius: 16px; border: 0.5px solid #1e1e1e; overflow: hidden; font-family: 'Inter', sans-serif; align-items: stretch;">
+
+      <!-- LEFT: Image panel -->
+      <div style="position: relative; overflow: hidden; min-height: 360px;">
+        <div class="hidden md:block" style="position: absolute; top: 1.75rem; left: 1.75rem; z-index: 3; font-size: 12px; color: #aaa; letter-spacing: 0.15em; text-transform: uppercase;">Why location matters</div>
+        <img src="/images/singapore-location.webp" alt="Singapore property location" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: brightness(0.3); z-index: 1;" />
+        <!-- Stat chip + pills overlay -->
+        <div style="position: absolute; bottom: 0; left: 0; right: 0; z-index: 3; padding: 1.5rem 1.75rem; display: flex; flex-direction: column; gap: 14px; background: linear-gradient(to top, rgba(12,12,12,0.92) 0%, transparent 100%);">
+          <div style="background: rgba(79,142,247,0.14); border: 0.5px solid rgba(79,142,247,0.3); border-radius: 10px; padding: 14px 20px; display: inline-flex; align-items: center; gap: 20px; width: fit-content;">
+            <div>
+              <div style="font-size: 32px; font-weight: 700; color: #fff; line-height: 1.05;">10</div>
+              <div style="font-size: 13px; color: #888; margin-top: 4px;">spots on page 1</div>
+            </div>
+            <div style="width: 0.5px; height: 44px; background: #2a2a2a; flex-shrink: 0;"></div>
+            <div>
+              <div style="font-size: 32px; font-weight: 700; color: #fff; line-height: 1.05;">30K+</div>
+              <div style="font-size: 13px; color: #888; margin-top: 4px;">agents competing</div>
+            </div>
           </div>
-          <div class="card-hover p-5 rounded-xl" style="background: #141414; border: 1px solid #222222;">
-            <div style="font-size: 13px; color: #4f8ef7; font-weight: 600; margin-bottom: 6px;">Google rewards local expertise</div>
-            <p style="font-size: 14px; color: #888888; line-height: 1.6;">A page dedicated to selling HDB flats in Tampines, with local content depth, outranks a generic page from a national agency. Google's local algorithm favours specificity.</p>
-          </div>
-          <div class="card-hover p-5 rounded-xl" style="background: #141414; border: 1px solid #222222;">
-            <div style="font-size: 13px; color: #4f8ef7; font-weight: 600; margin-bottom: 6px;">AI searches are local too</div>
-            <p style="font-size: 14px; color: #888888; line-height: 1.6;">When buyers ask ChatGPT "who is the best property agent in Tampines?", the answer pulls from local authority signals — not generic brand size.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span style="background: #141414; border: 0.5px solid #2a2a2a; border-radius: 999px; padding: 8px 16px; font-size: 13px; color: #888; display: inline-flex; align-items: center; gap: 8px;"><span style="width: 7px; height: 7px; border-radius: 50%; background: #4f8ef7; flex-shrink: 0; display: inline-block;"></span>property agent Tampines</span>
+            <span style="background: #141414; border: 0.5px solid #2a2a2a; border-radius: 999px; padding: 8px 16px; font-size: 13px; color: #888; display: inline-flex; align-items: center; gap: 8px;"><span style="width: 7px; height: 7px; border-radius: 50%; background: #4f8ef7; flex-shrink: 0; display: inline-block;"></span>sell HDB Woodlands</span>
+            <span style="background: #141414; border: 0.5px solid #2a2a2a; border-radius: 999px; padding: 8px 16px; font-size: 13px; color: #888; display: inline-flex; align-items: center; gap: 8px;"><span style="width: 7px; height: 7px; border-radius: 50%; background: #4f8ef7; flex-shrink: 0; display: inline-block;"></span>HDB agent Jurong West</span>
+            <span style="background: #141414; border: 0.5px solid #2a2a2a; border-radius: 999px; padding: 8px 16px; font-size: 13px; color: #888; display: inline-flex; align-items: center; gap: 8px;"><span style="width: 7px; height: 7px; border-radius: 50%; background: #4f8ef7; flex-shrink: 0; display: inline-block;"></span>buy EC Tampines</span>
           </div>
         </div>
       </div>
+
+      <!-- RIGHT: Content panel -->
+      <div style="padding: 1.75rem 2rem 2.25rem; display: flex; flex-direction: column; justify-content: flex-start; border-left: 0.5px solid #1e1e1e;">
+        <div style="font-size: 12px; color: #aaa; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 14px;">The opportunity</div>
+        <h2 style="font-size: 24px; font-weight: 600; color: #fff; line-height: 1.3; margin-bottom: 14px;">Buyers search by area. You need to rank in their area.</h2>
+        <p style="font-size: 15px; color: #666; line-height: 1.7; margin-bottom: 28px;">No buyer types 'property agent Singapore'. They type the exact estate they're looking in — and they're ready to transact when they do.</p>
+
+        <!-- Numbered reason blocks -->
+        <div style="margin-bottom: 22px;">
+          <div style="padding: 18px 0; border-bottom: 0.5px solid #1a1a1a;">
+            <div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 7px;">
+              <span style="font-size: 12px; color: #4f8ef7; font-weight: 600; flex-shrink: 0;">01</span>
+              <span style="font-size: 15px; color: #fff; font-weight: 500;">Specific beats broad</span>
+            </div>
+            <p style="font-size: 14px; color: #666; line-height: 1.65; margin: 0 0 0 30px;">'Property agent Tampines HDB' has less competition and higher buying intent than 'property agent Singapore'. Local keywords convert at a higher rate.</p>
+          </div>
+          <div style="padding: 18px 0; border-bottom: 0.5px solid #1a1a1a;">
+            <div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 7px;">
+              <span style="font-size: 12px; color: #4f8ef7; font-weight: 600; flex-shrink: 0;">02</span>
+              <span style="font-size: 15px; color: #fff; font-weight: 500;">Google rewards local expertise</span>
+            </div>
+            <p style="font-size: 14px; color: #666; line-height: 1.65; margin: 0 0 0 30px;">A page dedicated to selling HDB flats in Tampines outranks a generic page from PropNex or ERA — because Google's local algorithm favours specificity.</p>
+          </div>
+          <div style="padding: 18px 0 0 0;">
+            <div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 7px;">
+              <span style="font-size: 12px; color: #4f8ef7; font-weight: 600; flex-shrink: 0;">03</span>
+              <span style="font-size: 15px; color: #fff; font-weight: 500;">AI searches are local too</span>
+            </div>
+            <p style="font-size: 14px; color: #666; line-height: 1.65; margin: 0 0 0 30px;">When buyers ask ChatGPT 'who is the best property agent in Tampines?', the answer pulls from local authority signals — not generic brand size.</p>
+          </div>
+        </div>
+
+        <!-- Callout card -->
+        <div style="background: #0f1929; border: 0.5px solid #1a2d4a; border-radius: 10px; padding: 1.1rem 1.25rem;">
+          <div style="font-size: 11px; color: #4f8ef7; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 7px;">The asymmetry</div>
+          <p style="font-size: 14px; color: #7a8fa6; line-height: 1.65; margin: 0;">A Tampines agent with deep Tampines SEO will outrank PropNex and ERA on Tampines-specific searches. That's what local SEO creates.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
