@@ -1,5 +1,9 @@
 RewriteEngine On
 
+# HTTP to HTTPS redirect
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://estoracore.com/$1 [R=301,L]
+
 # www to non-www redirect
 RewriteCond %{HTTP_HOST} ^www\.estoracore\.com [NC]
 RewriteRule ^(.*)$ https://estoracore.com/$1 [R=301,L]
