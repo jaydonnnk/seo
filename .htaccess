@@ -1,3 +1,10 @@
+RewriteEngine On
+
+# www to non-www redirect
+RewriteCond %{HTTP_HOST} ^www\.estoracore\.com [NC]
+RewriteRule ^(.*)$ https://estoracore.com/$1 [R=301,L]
+
+# geo-aeo to ai-search-visibility redirects
 Redirect 301 /locations/tampines/geo-aeo/ /locations/tampines/ai-search-visibility/
 Redirect 301 /locations/jurong/geo-aeo/ /locations/jurong/ai-search-visibility/
 Redirect 301 /locations/woodlands/geo-aeo/ /locations/woodlands/ai-search-visibility/
