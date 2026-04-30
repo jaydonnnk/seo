@@ -47,6 +47,15 @@
     .post-card:hover { transform: translateY(-4px); border-color: #333333 !important; }
     .post-title { transition: color 0.2s ease; }
     .tag { font-size: 11px; padding: 3px 10px; border-radius: 9999px; font-weight: 500; }
+    .sidebar-post { transition: background-color 0.2s ease; }
+    .sidebar-post:hover { background-color: #161616; }
+    .sidebar-post:hover .sidebar-title { color: #4f8ef7; }
+    .sidebar-title { transition: color 0.2s ease; color: #ffffff; font-size: 13px; font-weight: 600; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .blog-feat-img { height: 260px; position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 24px; }
+    @media (max-width: 767px) {
+      .blog-feat-img { height: 180px; }
+      .blog-grid { grid-template-columns: 1fr !important; }
+    }
   </style>
 </head>
 <body class="min-h-screen">
@@ -86,110 +95,117 @@
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- Blog Layout -->
   <section class="pt-32 pb-16 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="max-w-2xl">
-        <div class="section-label mb-4">EstoraCore Blog</div>
-        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
+
+      <!-- Blog Header -->
+      <div class="mb-10 fade-up">
+        <div class="section-label mb-3">EstoraCore Blog</div>
+        <h1 class="text-3xl md:text-4xl font-bold text-white leading-tight mb-3">
           SEO & AI Search Insights for Singapore Property Agents
         </h1>
-        <p class="text-lg text-[#888888] leading-relaxed">
+        <p class="text-[#888888] text-sm leading-relaxed max-w-2xl">
           Practical guides on ranking on Google, getting cited by ChatGPT, and building an inbound pipeline — written specifically for independent agents in Singapore.
         </p>
       </div>
-    </div>
-  </section>
 
-  <hr class="divider" />
+      <!-- Two-column grid -->
+      <div class="blog-grid" style="display: grid; grid-template-columns: 1fr 380px; gap: 24px; align-items: start;">
 
-  <!-- Featured Post -->
-  <section class="py-16 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-6">Featured</div>
-      <a href="/blog/chatgpt-perplexity-changing-property-search-singapore/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] p-8 md:p-10 fade-up">
-        <div class="flex flex-wrap items-center gap-3 mb-5">
-          <span class="tag" style="background: #0f1929; color: #4f8ef7;">AI Search</span>
-          <span class="tag" style="background: #141414; color: #888888;">GEO & AEO</span>
-          <span class="text-xs text-[#555555]">7 min read</span>
-          <span class="text-xs text-[#444444]">·</span>
-          <span class="text-xs text-[#555555]">April 2026</span>
+        <!-- LEFT: Featured Post -->
+        <a href="/blog/chatgpt-perplexity-changing-property-search-singapore/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] overflow-hidden fade-up">
+          <!-- Image area -->
+          <div class="blog-feat-img" style="display: block; padding: 0;">
+            <img src="/images/main-blog-image.webp" alt="Featured post cover" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          </div>
+          <!-- Content area -->
+          <div style="padding: 1.5rem;">
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="tag" style="background: #0f1929; color: #4f8ef7;">AI Search</span>
+              <span class="tag" style="background: #141414; color: #888888;">GEO & AEO</span>
+              <span class="text-xs text-[#555555]">7 min read</span>
+              <span class="text-xs text-[#555555]">· April 2025</span>
+            </div>
+            <h2 class="post-title text-xl font-bold text-white mt-3 mb-3 leading-snug">How ChatGPT and Perplexity Are Changing Property Search in Singapore — And What Agents Should Do Now</h2>
+            <p class="text-sm text-[#888888] leading-relaxed mb-4">AI assistants are now answering property questions that buyers used to type into Google. When someone asks ChatGPT "who is the best property agent in Tampines?" — is your name in the answer?</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: #4f8ef7; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #fff; flex-shrink: 0;">J</div>
+                <span style="font-size: 13px; font-weight: 700; color: #ffffff;">Jaydon Kua</span>
+                <span style="font-size: 13px; color: #666666;">Blog Creator</span>
+                <span style="font-size: 13px; color: #555555;">30 April 2026 &middot; 7 min read</span>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-[#4f8ef7] font-medium" style="flex-shrink: 0;">
+                Read article
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- RIGHT: Trending Sidebar -->
+        <div class="flex flex-col gap-0 rounded-xl border border-[#1a1a1a] bg-[#111111] overflow-hidden fade-up">
+          <!-- Sidebar header -->
+          <div style="background: linear-gradient(135deg, #0f1929 0%, #1a1f3a 100%); padding: 20px; border-bottom: 1px solid #1a1a1a; position: relative; overflow: hidden; min-height: 80px;">
+            <div style="position: absolute; top: -10px; right: -10px; width: 80px; height: 80px; border-radius: 50%; background: rgba(79,142,247,0.15); border: 1px solid rgba(79,142,247,0.2);"></div>
+            <div style="position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border-radius: 50%; background: rgba(79,142,247,0.08);"></div>
+            <div style="font-size: 18px; font-weight: 700; color: #ffffff; line-height: 1.2; position: relative; z-index: 1;">Trending<br>on EstoraCore</div>
+          </div>
+
+          <!-- Post 1 -->
+          <a href="/blog/how-property-agents-rank-on-google-singapore/" class="sidebar-post" style="display: flex; align-items: center; padding: 14px 16px; border-bottom: 1px solid #1a1a1a; text-decoration: none;">
+            <div style="width: 72px; height: 72px; border-radius: 8px; flex-shrink: 0; overflow: hidden;">
+              <img src="/images/blog-image1.webp" alt="How Property Agents Rank on Google" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+            </div>
+            <div style="flex: 1; padding-left: 12px;">
+              <div class="sidebar-title">How Property Agents Rank on Google in Singapore</div>
+              <div style="font-size: 11px; color: #555555; margin-top: 4px; margin-bottom: 6px;">Jun 2025 · 9 min</div>
+              <span style="font-size: 10px; background: #0a1a0a; color: #5cb85c; border-radius: 9999px; padding: 2px 8px; font-weight: 500;">SEO Fundamentals</span>
+            </div>
+          </a>
+
+          <!-- Post 2 -->
+          <a href="/blog/what-is-geo-aeo-property-agents/" class="sidebar-post" style="display: flex; align-items: center; padding: 14px 16px; border-bottom: 1px solid #1a1a1a; text-decoration: none;">
+            <div style="width: 72px; height: 72px; border-radius: 8px; flex-shrink: 0; overflow: hidden;">
+              <img src="/images/blog-image2.webp" alt="What Is GEO and AEO?" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+            </div>
+            <div style="flex: 1; padding-left: 12px;">
+              <div class="sidebar-title">What Is GEO and AEO? A Plain-English Guide for Singapore Property Agents</div>
+              <div style="font-size: 11px; color: #555555; margin-top: 4px; margin-bottom: 6px;">May 2025 · 6 min</div>
+              <span style="font-size: 10px; background: #0f1929; color: #4f8ef7; border-radius: 9999px; padding: 2px 8px; font-weight: 500;">AI Search</span>
+            </div>
+          </a>
+
+          <!-- Post 3 -->
+          <a href="/blog/google-business-profile-property-agent-singapore/" class="sidebar-post" style="display: flex; align-items: center; padding: 14px 16px; border-bottom: 1px solid #1a1a1a; text-decoration: none;">
+            <div style="width: 72px; height: 72px; border-radius: 8px; flex-shrink: 0; overflow: hidden;">
+              <img src="/images/blog-image3.webp" alt="Google Business Profile for Property Agents" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+            </div>
+            <div style="flex: 1; padding-left: 12px;">
+              <div class="sidebar-title">Google Business Profile for Property Agents: The Singapore Optimisation Guide</div>
+              <div style="font-size: 11px; color: #555555; margin-top: 4px; margin-bottom: 6px;">Apr 2025 · 8 min</div>
+              <span style="font-size: 10px; background: #1a1a0a; color: #c8a020; border-radius: 9999px; padding: 2px 8px; font-weight: 500;">Local SEO</span>
+            </div>
+          </a>
+
+          <!-- Post 4 -->
+          <a href="/blog/hdb-vs-condo-seo-different-strategy/" class="sidebar-post" style="display: flex; align-items: center; padding: 14px 16px; text-decoration: none;">
+            <div style="width: 72px; height: 72px; border-radius: 8px; flex-shrink: 0; overflow: hidden;">
+              <img src="/images/blog-image4.webp" alt="HDB vs Condo SEO" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+            </div>
+            <div style="flex: 1; padding-left: 12px;">
+              <div class="sidebar-title">HDB vs Condo SEO: Why Your Strategy Needs to Be Different for Each</div>
+              <div style="font-size: 11px; color: #555555; margin-top: 4px; margin-bottom: 6px;">Mar 2025 · 7 min</div>
+              <span style="font-size: 10px; background: #0a1a0a; color: #5cb85c; border-radius: 9999px; padding: 2px 8px; font-weight: 500;">SEO Strategy</span>
+            </div>
+          </a>
+
         </div>
-        <h2 class="post-title text-2xl md:text-3xl font-bold text-white mb-4 leading-snug">How ChatGPT and Perplexity Are Changing Property Search in Singapore — And What Agents Should Do Now</h2>
-        <p class="text-[#888888] leading-relaxed max-w-3xl mb-6">AI assistants are now answering property questions that buyers used to type into Google. When someone asks ChatGPT "who is the best property agent in Tampines?" — is your name in the answer? Probably not. Here's why that matters and what to do about it.</p>
-        <div class="flex items-center gap-2 text-sm text-[#4f8ef7] font-medium">
-          Read article
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- All Posts -->
-  <section class="py-16 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-8">All Articles</div>
-      <div class="grid md:grid-cols-2 gap-6">
-
-        <a href="/blog/how-property-agents-rank-on-google-singapore/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] p-6 fade-up">
-          <div class="flex flex-wrap items-center gap-3 mb-4">
-            <span class="tag" style="background: #0a1a0a; color: #5cb85c;">SEO Fundamentals</span>
-            <span class="text-xs text-[#555555]">9 min read</span>
-          </div>
-          <h2 class="post-title text-lg font-bold text-white mb-3 leading-snug">How Property Agents Rank on Google in Singapore: The Complete Guide</h2>
-          <p class="text-sm text-[#888888] leading-relaxed mb-4">Everything an independent agent needs to know to build a Google presence that generates inbound enquiries — from keyword research to Google Business Profile to content strategy.</p>
-          <div class="flex items-center gap-2 text-xs text-[#4f8ef7] font-medium">
-            Read article
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </a>
-
-        <a href="/blog/what-is-geo-aeo-property-agents/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] p-6 fade-up" style="transition-delay:0.1s">
-          <div class="flex flex-wrap items-center gap-3 mb-4">
-            <span class="tag" style="background: #0f1929; color: #4f8ef7;">AI Search</span>
-            <span class="text-xs text-[#555555]">6 min read</span>
-          </div>
-          <h2 class="post-title text-lg font-bold text-white mb-3 leading-snug">What Is GEO and AEO? A Plain-English Guide for Singapore Property Agents</h2>
-          <p class="text-sm text-[#888888] leading-relaxed mb-4">Generative Engine Optimisation and Answer Engine Optimisation explained without jargon. What they are, why they matter, and how they're different from the SEO you already know.</p>
-          <div class="flex items-center gap-2 text-xs text-[#4f8ef7] font-medium">
-            Read article
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </a>
-
-        <a href="/blog/google-business-profile-property-agent-singapore/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] p-6 fade-up" style="transition-delay:0.15s">
-          <div class="flex flex-wrap items-center gap-3 mb-4">
-            <span class="tag" style="background: #1a1a0a; color: #c8a020;">Local SEO</span>
-            <span class="text-xs text-[#555555]">8 min read</span>
-          </div>
-          <h2 class="post-title text-lg font-bold text-white mb-3 leading-snug">Google Business Profile for Property Agents: The Singapore Optimisation Guide</h2>
-          <p class="text-sm text-[#888888] leading-relaxed mb-4">Most Singapore property agents have a GBP listing. Almost none of them are properly optimised. Here's the complete playbook for dominating the local map pack in your area.</p>
-          <div class="flex items-center gap-2 text-xs text-[#4f8ef7] font-medium">
-            Read article
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </a>
-
-        <a href="/blog/hdb-vs-condo-seo-different-strategy/" class="block post-card rounded-xl border border-[#1a1a1a] bg-[#111111] p-6 fade-up" style="transition-delay:0.2s">
-          <div class="flex flex-wrap items-center gap-3 mb-4">
-            <span class="tag" style="background: #0a1a0a; color: #5cb85c;">SEO Strategy</span>
-            <span class="text-xs text-[#555555]">7 min read</span>
-          </div>
-          <h2 class="post-title text-lg font-bold text-white mb-3 leading-snug">HDB vs Condo SEO: Why Your Strategy Needs to Be Different for Each</h2>
-          <p class="text-sm text-[#888888] leading-relaxed mb-4">HDB buyers and condo buyers search completely differently. Using the same SEO approach for both means you're optimised for neither. Here's how to build a strategy that matches your market.</p>
-          <div class="flex items-center gap-2 text-xs text-[#4f8ef7] font-medium">
-            Read article
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </a>
 
       </div>
     </div>
   </section>
-
-  <hr class="divider" />
 
   <!-- CTA -->
   <section class="py-20 px-6">
