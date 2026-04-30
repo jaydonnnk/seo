@@ -14,3 +14,39 @@ Redirect 301 /locations/jurong/geo-aeo/ /locations/jurong/ai-search-visibility/
 Redirect 301 /locations/woodlands/geo-aeo/ /locations/woodlands/ai-search-visibility/
 Redirect 301 /locations/orchard/geo-aeo/ /locations/orchard/ai-search-visibility/
 Redirect 301 /locations/bukit-timah/geo-aeo/ /locations/bukit-timah/ai-search-visibility/
+
+# Cache Control
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images — 1 year (they're versioned by filename)
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png  "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Fonts — 1 year
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff  "access plus 1 year"
+
+  # CSS and JS — 1 month
+  ExpiresByType text/css        "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # HTML — no cache (always fresh)
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Add immutable flag to images and fonts
+  <FilesMatch "\.(webp|png|jpg|jpeg|svg|ico|woff2|woff)$">
+    Header append Cache-Control "public, immutable"
+  </FilesMatch>
+
+  # HTML must revalidate
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
