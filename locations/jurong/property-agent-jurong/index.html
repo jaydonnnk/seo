@@ -18,33 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ffffff; -webkit-font-smoothing: antialiased; }
-    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .fade-up.visible { opacity: 1; transform: translateY(0); }
-    #navbar { transition: background-color 0.3s ease, border-color 0.3s ease; }
-    #navbar.scrolled { background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; }
-    .section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #555555; }
-    .card-hover { transition: transform 0.25s ease, border-color 0.25s ease; }
-    .card-hover:hover { transform: translateY(-4px); border-color: #333333 !important; }
-    .btn-primary { background-color: #4f8ef7; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 600; font-size: 15px; transition: box-shadow 0.25s ease, transform 0.2s ease; display: inline-block; text-decoration: none; }
-    .btn-primary:hover { box-shadow: 0 0 24px rgba(79,142,247,0.4); transform: translateY(-1px); }
-    .btn-ghost { border: 1px solid #333333; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 500; font-size: 15px; transition: border-color 0.25s ease; display: inline-block; text-decoration: none; background: transparent; }
-    .btn-ghost:hover { border-color: #555555; }
-    .divider { border: none; border-top: 1px solid #1a1a1a; }
-    #mobile-menu { display: none; background-color: #0a0a0a; border-top: 1px solid #1a1a1a; }
-    #mobile-menu.open { display: block; }
-    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-    .faq-question { cursor: pointer; }
-    .faq-icon { transition: transform 0.3s ease; }
-    .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
-    .inline-link { color: #4f8ef7; text-decoration: none; }
-    .inline-link:hover { text-decoration: underline; }
-    .cta-bar { background: #0f1929; border: 1px solid #1a2d4a; border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-  </style>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -368,14 +342,6 @@
   })();
 </script>
 <!-- WHATSAPP FLOATING BUTTON -->
-<style>
-  .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 9999; width: 52px; height: 52px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: all 0.2s ease; text-decoration: none; }
-  .wa-float:hover { box-shadow: 0 6px 24px rgba(37,211,102,0.6); transform: scale(1.08); }
-  .wa-float::before { content: ''; position: absolute; width: 52px; height: 52px; border-radius: 50%; background: rgba(37,211,102,0.3); animation: wa-pulse 2s ease-out infinite; z-index: -1; }
-  @keyframes wa-pulse { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(1.6); opacity: 0; } }
-  .wa-tooltip { position: absolute; right: 64px; top: 50%; transform: translateY(-50%); background: #1a1a1a; border: 1px solid #2a2a2a; color: #fff; font-size: 13px; padding: 6px 12px; border-radius: 8px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; font-family: 'Inter', sans-serif; }
-  .wa-float:hover .wa-tooltip { opacity: 1; }
-</style>
 <a href="https://wa.me/6591003376" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp" class="wa-float">
   <span class="wa-tooltip">Chat with us</span>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="26" height="26">
