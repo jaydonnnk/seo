@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /audit.php
+Disallow: /config.php
+Disallow: /contact.php
+Disallow: /mail/
+
+Sitemap: https://EstoraCore.com/sitemap.xml
