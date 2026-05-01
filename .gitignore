@@ -1,0 +1,4 @@
+node_modules/
+node_modules_temp/
+*.ps1
+.claude/settings.local.json
