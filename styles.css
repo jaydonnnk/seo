@@ -304,7 +304,7 @@ button { background-color: transparent; background-image: none; cursor: pointer;
 #navbar.scrolled { background-color: #0a0a0a; border-bottom: 1px solid #1a1a1a; }
 
 /* Section label */
-.section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #555555; }
+.section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #4f8ef7; }
 
 /* Card hover */
 .card-hover { transition: transform 0.25s ease, border-color 0.25s ease; }
