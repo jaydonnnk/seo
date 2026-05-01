@@ -513,4 +513,5 @@ h3.section-h3 { font-size: 17px; font-weight: 600; color: #ffffff; margin-bottom
   .prob-cards-grid { grid-template-columns: 1fr; }
   .blog-feat-img { height: 180px; }
   .blog-grid { grid-template-columns: 1fr !important; }
+  .hero-problem-wrapper { background-position: center bottom !important; }
 }
