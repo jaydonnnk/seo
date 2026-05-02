@@ -518,6 +518,9 @@ h3.section-h3 { font-size: 17px; font-weight: 600; color: #ffffff; margin-bottom
   #floating-cta .btn-primary { width: 100%; text-align: center; }
 }
 
+/* Nav link legibility */
+nav a.text-sm { letter-spacing: 0.01em; }
+
 /* Focus visibility for keyboard users */
 a:focus-visible,
 button:focus-visible,
