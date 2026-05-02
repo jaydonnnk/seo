@@ -308,7 +308,7 @@ button { background-color: transparent; background-image: none; cursor: pointer;
 
 /* Card hover */
 .card-hover { transition: transform 0.25s ease, border-color 0.25s ease; }
-.card-hover:hover { transform: translateY(-4px); border-color: #333333 !important; }
+.card-hover:hover { transform: translateY(-4px); border-color: #333333 !important; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
 
 /* Buttons */
 .btn-primary { background-color: #4f8ef7; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 600; font-size: 15px; transition: box-shadow 0.25s ease, transform 0.2s ease; display: inline-block; text-decoration: none; }
@@ -384,8 +384,8 @@ button { background-color: transparent; background-image: none; cursor: pointer;
 #slider-prev { left: 16px; }
 #slider-next { right: 16px; }
 .slider-dots { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
-.slider-dot { width: 8px; height: 8px; border-radius: 50%; background: #333333; border: 1px solid #2a2a2a; cursor: pointer; transition: background 0.25s ease, transform 0.25s ease; }
-.slider-dot.active { background: #4f8ef7; border-color: #4f8ef7; transform: scale(1.3); }
+.slider-dot { width: 10px; height: 10px; border-radius: 50%; background: #555555; border: 1px solid #444444; cursor: pointer; transition: background 0.25s ease, transform 0.25s ease; }
+.slider-dot.active { background: #4f8ef7; border-color: #4f8ef7; transform: scale(1.25); box-shadow: 0 0 8px rgba(79,142,247,0.5); }
 
 /* === Problem Section (homepage) === */
 .prob-hero-wrap { position: relative; width: 100%; overflow: hidden; }
