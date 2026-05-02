@@ -514,4 +514,16 @@ h3.section-h3 { font-size: 17px; font-weight: 600; color: #ffffff; margin-bottom
   .blog-feat-img { height: 180px; }
   .blog-grid { grid-template-columns: 1fr !important; }
   .hero-problem-wrapper { background-position: center bottom !important; }
+  #floating-cta { padding: 10px 16px; }
+  #floating-cta .btn-primary { width: 100%; text-align: center; }
+}
+
+/* Focus visibility for keyboard users */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #4f8ef7;
+  outline-offset: 2px;
 }

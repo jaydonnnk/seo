@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -65,6 +65,8 @@
 
 </head>
 <body>
+<!-- Scroll progress bar -->
+<div id="scroll-progress" style="position: fixed; top: 0; left: 0; height: 2px; width: 0%; background: #4f8ef7; z-index: 9999; transition: width 0.1s linear;"></div>
 
 <!-- ===================== NAVIGATION ===================== -->
 <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4">
@@ -523,8 +525,8 @@
         <h2 style="font-size: clamp(22px, 5vw, 30px); font-weight: 700; color: #ffffff; margin-top: 14px; line-height: 1.2;">A proven system, not guesswork.</h2>
       </div>
       <div style="display: flex; flex-direction: column;">
-        <div class="fade-up" style="padding: 32px 0; border-bottom: 1px solid #1a1a1a;">
-          <div style="font-size: 36px; font-weight: 800; color: #4f8ef7; line-height: 1; margin-bottom: 14px; text-shadow: 0 0 16px rgba(79,142,247,0.45);">01</div>
+        <div class="fade-up" style="padding: 24px 0; border-bottom: 1px solid #1a1a1a;">
+          <div style="font-size: 28px; font-weight: 800; color: rgba(79,142,247,0.4); line-height: 1; margin-bottom: 14px; text-shadow: 0 0 16px rgba(79,142,247,0.45);">01</div>
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Audit</h3>
           <p style="font-size: 14px; color: #999999; line-height: 1.7; margin-bottom: 16px;">We map your current search presence, AI visibility gaps, and what your competitors are doing that you're not.</p>
           <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
@@ -534,8 +536,8 @@
             <li style="display: flex; gap: 10px; font-size: 13px; color: #999999; line-height: 1.6;"><span style="color: #666666; flex-shrink: 0; font-weight: 700;">—</span>Quick-win opportunities identified</li>
           </ul>
         </div>
-        <div class="fade-up" style="padding: 32px 0; border-bottom: 1px solid #1a1a1a;">
-          <div style="font-size: 36px; font-weight: 800; color: #4f8ef7; line-height: 1; margin-bottom: 14px; text-shadow: 0 0 16px rgba(79,142,247,0.45);">02</div>
+        <div class="fade-up" style="padding: 24px 0; border-bottom: 1px solid #1a1a1a;">
+          <div style="font-size: 28px; font-weight: 800; color: rgba(79,142,247,0.4); line-height: 1; margin-bottom: 14px; text-shadow: 0 0 16px rgba(79,142,247,0.45);">02</div>
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Strategy</h3>
           <p style="font-size: 14px; color: #999999; line-height: 1.7; margin-bottom: 16px;">We build a keyword and content cluster map targeting buyers and sellers in your area and price range.</p>
           <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
@@ -545,8 +547,8 @@
             <li style="display: flex; gap: 10px; font-size: 13px; color: #999999; line-height: 1.6;"><span style="color: #666666; flex-shrink: 0; font-weight: 700;">—</span>Priority page roadmap with revenue projections</li>
           </ul>
         </div>
-        <div class="fade-up" style="padding: 32px 0; border-bottom: 1px solid #1a1a1a;">
-          <div style="font-size: 36px; font-weight: 800; color: #4f8ef7; line-height: 1; margin-bottom: 14px; text-shadow: 0 0 16px rgba(79,142,247,0.45);">03</div>
+        <div class="fade-up" style="padding: 24px 0; border-bottom: 1px solid #1a1a1a;">
+          <div style="font-size: 28px; font-weight: 800; color: rgba(79,142,247,0.4); line-height: 1; margin-bottom: 14px; text-shadow: 0 0 16px rgba(79,142,247,0.45);">03</div>
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Execute</h3>
           <p style="font-size: 14px; color: #999999; line-height: 1.7; margin-bottom: 16px;">On-page SEO, content, schema markup, PR mentions, and AI optimisation — built to compound over time.</p>
           <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
@@ -556,8 +558,8 @@
             <li style="display: flex; gap: 10px; font-size: 13px; color: #999999; line-height: 1.6;"><span style="color: #666666; flex-shrink: 0; font-weight: 700;">—</span>GEO signals built for ChatGPT and Perplexity citation</li>
           </ul>
         </div>
-        <div class="fade-up" style="padding: 32px 0;">
-          <div style="font-size: 36px; font-weight: 800; color: #4f8ef7; line-height: 1; margin-bottom: 14px; text-shadow: 0 0 16px rgba(79,142,247,0.45);">04</div>
+        <div class="fade-up" style="padding: 24px 0;">
+          <div style="font-size: 28px; font-weight: 800; color: rgba(79,142,247,0.4); line-height: 1; margin-bottom: 14px; text-shadow: 0 0 16px rgba(79,142,247,0.45);">04</div>
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Compound</h3>
           <p style="font-size: 14px; color: #999999; line-height: 1.7; margin-bottom: 16px;">We track, refine, and expand your authority every month. Rankings don't plateau — they build.</p>
           <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
@@ -876,7 +878,7 @@
           <img src="/logo-footer.webp" alt="EstoraCore" width="68" height="56" loading="lazy" style="height: 28px; width: auto;">
         </a>
         <span style="font-size: 12px; color: #333333;">
-          &copy; 2026 EstoraCore. All rights reserved.
+          &copy; 2026 EstoraCore. All rights reserved. &bull; <a href="/privacy-policy/" style="color: #444444; text-decoration: none; font-size: 11px;" class="hover:text-white transition-colors">Privacy Policy</a> &bull; <a href="/privacy-policy/" style="color: #444444; text-decoration: none; font-size: 11px;" class="hover:text-white transition-colors">Privacy Policy</a>
         <div style="font-size: 11px; color: #444444; margin-top: 8px;">Singapore &bull; UEN pending</div>
         </span>
       </div>
@@ -1112,6 +1114,16 @@
   });
   btn.addEventListener('click', function(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
+// Scroll progress bar
+(function(){
+  var bar = document.getElementById('scroll-progress');
+  if (!bar) return;
+  window.addEventListener('scroll', function(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
   });
 })();
   </script>
