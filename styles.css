@@ -42,8 +42,8 @@
 
   /* Text */
   --color-text: #ffffff;
-  --color-text-muted: #888888;
-  --color-text-dimmed: #555555;
+  --color-text-muted: #999999;
+  --color-text-dimmed: #666666;
   --color-text-faint: #444444;
   --color-text-soft: #cccccc;
   --color-text-body: #e0e0e0;
@@ -235,8 +235,8 @@ button { background-color: transparent; background-image: none; cursor: pointer;
 /* --- Colors (text, bg, border) --- */
 .text-white { color: #ffffff; }
 .text-\[\#4f8ef7\] { color: #4f8ef7; }
-.text-\[\#888888\] { color: #888888; }
-.text-\[\#555555\] { color: #555555; }
+.text-\[\#999999\] { color: #999999; }
+.text-\[\#666666\] { color: #666666; }
 .text-\[\#444444\] { color: #444444; }
 .text-\[\#5cb85c\] { color: #5cb85c; }
 .text-\[\#86efac\] { color: #86efac; }
@@ -287,7 +287,7 @@ button { background-color: transparent; background-image: none; cursor: pointer;
    4. Hover Variants
    ============================================================ */
 .hover\:text-white:hover { color: #ffffff; }
-.hover\:text-\[\#888888\]:hover { color: #888888; }
+.hover\:text-\[\#999999\]:hover { color: #999999; }
 .hover\:underline:hover { text-decoration: underline; }
 .hover\:border-\[\#333333\]:hover { border-color: #333333; }
 
@@ -314,7 +314,7 @@ button { background-color: transparent; background-image: none; cursor: pointer;
 .btn-primary { background-color: #4f8ef7; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 600; font-size: 15px; transition: box-shadow 0.25s ease, transform 0.2s ease; display: inline-block; text-decoration: none; }
 .btn-primary:hover { box-shadow: 0 0 24px rgba(79, 142, 247, 0.4); transform: translateY(-1px); }
 .btn-ghost { border: 1px solid #333333; color: #ffffff; border-radius: 9999px; padding: 12px 28px; font-weight: 500; font-size: 15px; transition: border-color 0.25s ease, color 0.25s ease; display: inline-block; text-decoration: none; background: transparent; }
-.btn-ghost:hover { border-color: #555555; color: #cccccc; }
+.btn-ghost:hover { border-color: #666666; color: #cccccc; }
 
 /* Divider */
 .divider { border: none; border-top: 1px solid #1a1a1a; }
@@ -358,7 +358,7 @@ button { background-color: transparent; background-image: none; cursor: pointer;
 .serp-result:last-child { border-bottom: none; }
 .serp-url { font-size: 12px; color: #4b9b6e; margin-bottom: 4px; }
 .serp-title { font-size: 16px; color: #4f8ef7; font-weight: 600; margin-bottom: 4px; cursor: pointer; }
-.serp-desc { font-size: 13px; color: #888888; line-height: 1.5; }
+.serp-desc { font-size: 13px; color: #999999; line-height: 1.5; }
 .serp-rank-badge { display: inline-block; background: #4f8ef7; color: white; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-right: 6px; letter-spacing: 0.05em; }
 
 /* === ChatGPT Mockup === */
@@ -399,7 +399,7 @@ button { background-color: transparent; background-image: none; cursor: pointer;
 .form-input { width: 100%; background: #141414; border: 1px solid #222222; border-radius: 8px; padding: 14px 16px; color: #ffffff; font-size: 15px; transition: border-color 0.2s ease; outline: none; }
 .form-input:focus { border-color: #4f8ef7; }
 .form-input::placeholder { color: #444444; }
-.form-label { font-size: 13px; font-weight: 500; color: #888888; margin-bottom: 8px; display: block; }
+.form-label { font-size: 13px; font-weight: 500; color: #999999; margin-bottom: 8px; display: block; }
 textarea.form-input { resize: vertical; min-height: 140px; }
 select.form-input { appearance: none; cursor: pointer; }
 .check-item { display: flex; align-items: flex-start; gap: 12px; }
@@ -408,10 +408,10 @@ select.form-input { appearance: none; cursor: pointer; }
 /* === Blog === */
 .prose h2 { font-size: 1.4rem; font-weight: 700; color: #ffffff; margin-top: 2.5rem; margin-bottom: 0.75rem; }
 .prose h3 { font-size: 1.1rem; font-weight: 600; color: #e0e0e0; margin-top: 1.75rem; margin-bottom: 0.5rem; }
-.prose p { color: #888888; line-height: 1.8; margin-bottom: 1.25rem; }
-.prose ul { color: #888888; line-height: 1.8; margin-bottom: 1.25rem; padding-left: 1.25rem; }
+.prose p { color: #999999; line-height: 1.8; margin-bottom: 1.25rem; }
+.prose ul { color: #999999; line-height: 1.8; margin-bottom: 1.25rem; padding-left: 1.25rem; }
 .prose ul li { margin-bottom: 0.4rem; list-style-type: disc; }
-.prose ol { color: #888888; line-height: 1.8; margin-bottom: 1.25rem; padding-left: 1.25rem; }
+.prose ol { color: #999999; line-height: 1.8; margin-bottom: 1.25rem; padding-left: 1.25rem; }
 .prose ol li { margin-bottom: 0.6rem; list-style-type: decimal; }
 .prose strong { color: #cccccc; font-weight: 600; }
 .prose a { color: #4f8ef7; text-decoration: none; }
@@ -436,7 +436,7 @@ select.form-input { appearance: none; cursor: pointer; }
 /* === Comparison Table === */
 .comparison-table { width: 100%; border-collapse: collapse; border: 1px solid #222222; }
 .comparison-table th { background-color: #141414; padding: 16px 20px; text-align: left; font-size: 14px; font-weight: 700; color: #ffffff; border: 1px solid #222222; }
-.comparison-table td { padding: 14px 20px; font-size: 14px; color: #888888; border: 1px solid #222222; line-height: 1.6; }
+.comparison-table td { padding: 14px 20px; font-size: 14px; color: #999999; border: 1px solid #222222; line-height: 1.6; }
 .comparison-table tr:nth-child(even) td { background-color: #0d0d0d; }
 .comparison-table tr:nth-child(odd) td { background-color: transparent; }
 .comparison-table td:first-child { font-weight: 700; color: #ffffff; }
@@ -451,7 +451,7 @@ select.form-input { appearance: none; cursor: pointer; }
 
 /* === Insights === */
 .stat-callout { background: #0f1929; border: 1px solid #1a2d4a; border-radius: 16px; padding: 32px; }
-.body-text { font-size: 15px; color: #888888; line-height: 1.8; }
+.body-text { font-size: 15px; color: #999999; line-height: 1.8; }
 .body-text a { color: #4f8ef7; text-decoration: underline; text-underline-offset: 3px; }
 h2.section-h2 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 700; color: #ffffff; margin-bottom: 16px; margin-top: 0; }
 h3.section-h3 { font-size: 17px; font-weight: 600; color: #ffffff; margin-bottom: 10px; margin-top: 24px; }
