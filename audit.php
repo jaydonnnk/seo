@@ -45,7 +45,7 @@ try {
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
     $mail->setFrom('estoracore@gmail.com', 'EstoraCore Website');
-    $mail->addAddress('estoracore@gmail.com');
+    $mail->addAddress('enquiry@estoracore.com');
 
     $mail->Subject = 'New Free Audit Request';
     $mail->Body    =
